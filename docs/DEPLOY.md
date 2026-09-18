@@ -40,7 +40,7 @@ If `data/processed/analysis_table.csv` does not appear, run
 
 5. Fill in the three fields:
    - **Repository**: start typing `school-start-times` and pick
-     `YOUR_USERNAME/school-start-times` from the dropdown.
+     `sahishnu-m/school-start-times` from the dropdown.
    - **Branch**: `main`
    - **Main file path**: `streamlit_app.py`
 

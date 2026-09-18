@@ -2,7 +2,9 @@
 
 A study of Nevada public high schools in the 2022-2023 school year.
 
-Live dashboard: see the deployment section below.
+Repository: <https://github.com/sahishnu-m/school-start-times>
+
+Live dashboard: deploy it with the steps in `docs/DEPLOY.md`.
 
 ## Motivation
 
@@ -317,7 +319,7 @@ relationship. That is reported plainly rather than buried.
 You need Python 3.11 or newer.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/school-start-times.git
+git clone https://github.com/sahishnu-m/school-start-times.git
 cd school-start-times
 
 python -m venv .venv
