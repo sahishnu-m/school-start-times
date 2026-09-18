@@ -79,9 +79,10 @@ choose **Reboot app**.
 
 Open the build log and read the last twenty lines. The two common causes:
 
-**A package fails to install.** Streamlit Cloud may not have a wheel for a
-pinned version on its Python version. Loosen the pin in `requirements.txt`, for
-example change `pandas==3.0.6` to `pandas>=2.2`, then commit and push.
+**A package fails to install.** `requirements.txt` already uses minimum
+versions rather than exact pins for this reason. If one package still fails,
+pin that single package to the exact version listed in the comment beside it,
+then commit and push.
 
 **The app starts but says no analysis table was found.** The processed data was
 not committed. Run the pipeline locally, then:
