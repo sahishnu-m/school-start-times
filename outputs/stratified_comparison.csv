@@ -1,0 +1,21 @@
+poverty_band,outcome,outcome_label,n_early,n_late,mean_early,mean_late,difference_late_minus_early,ci_low,ci_high,p_value,note
+Lowest poverty,act_composite,ACT composite score,0,0,,,,,,,too few schools in one group to compare
+Lower middle,act_composite,ACT composite score,9,0,20.00111111111111,,,,,,too few schools in one group to compare
+Upper middle,act_composite,ACT composite score,10,1,17.538,16.79,,,,,too few schools in one group to compare
+Highest poverty,act_composite,ACT composite score,17,1,15.044117647058824,16.3,,,,,too few schools in one group to compare
+Lowest poverty,grad_rate,Four year graduation rate (percent),0,0,,,,,,,too few schools in one group to compare
+Lower middle,grad_rate,Four year graduation rate (percent),9,0,94.47222222222223,,,,,,too few schools in one group to compare
+Upper middle,grad_rate,Four year graduation rate (percent),10,1,91.881,97.5,,,,,too few schools in one group to compare
+Highest poverty,grad_rate,Four year graduation rate (percent),17,1,86.05,93.98,,,,,too few schools in one group to compare
+Lowest poverty,ela_proficient_pct,ELA proficiency (percent),0,0,,,,,,,too few schools in one group to compare
+Lower middle,ela_proficient_pct,ELA proficiency (percent),9,0,70.05555555555556,,,,,,too few schools in one group to compare
+Upper middle,ela_proficient_pct,ELA proficiency (percent),10,1,52.27,34.4,,,,,too few schools in one group to compare
+Highest poverty,ela_proficient_pct,ELA proficiency (percent),17,1,26.11176470588235,34.1,,,,,too few schools in one group to compare
+Lowest poverty,math_proficient_pct,Math proficiency (percent),0,0,,,,,,,too few schools in one group to compare
+Lower middle,math_proficient_pct,Math proficiency (percent),9,0,39.20000000000001,,,,,,too few schools in one group to compare
+Upper middle,math_proficient_pct,Math proficiency (percent),10,1,21.310000000000002,13.7,,,,,too few schools in one group to compare
+Highest poverty,math_proficient_pct,Math proficiency (percent),17,1,7.264705882352941,18.2,,,,,too few schools in one group to compare
+Lowest poverty,chronic_absent_pct,Chronic absenteeism (percent),0,0,,,,,,,too few schools in one group to compare
+Lower middle,chronic_absent_pct,Chronic absenteeism (percent),9,0,30.45555555555556,,,,,,too few schools in one group to compare
+Upper middle,chronic_absent_pct,Chronic absenteeism (percent),10,1,36.410000000000004,28.2,,,,,too few schools in one group to compare
+Highest poverty,chronic_absent_pct,Chronic absenteeism (percent),17,1,52.62941176470588,42.5,,,,,too few schools in one group to compare

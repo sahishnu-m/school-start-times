@@ -1,0 +1,24 @@
+# Data handling
+pandas==3.0.6
+numpy==2.5.3
+
+# Statistics. statsmodels gives regression coefficients with standard errors
+# and confidence intervals, which is what the analysis reports.
+statsmodels==0.15.0
+scipy==1.18.1
+
+# Charts written to /outputs
+matplotlib==3.11.2
+
+# Fetching and scraping
+# pypdf reads the district bell schedule documents, which are published as PDFs
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.3
+pypdf==6.19.0
+
+# Dashboard
+streamlit==1.64.0
+
+# Config file parsing
+PyYAML==6.0.3

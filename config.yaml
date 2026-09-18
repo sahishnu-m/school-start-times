@@ -1,0 +1,120 @@
+# Central configuration for the study.
+# Every module reads from this file so that changing a year or a threshold
+# happens in one place instead of being scattered through the code.
+
+# ---------------------------------------------------------------------------
+# Study year
+# ---------------------------------------------------------------------------
+# Nevada Report Card labels a school year by its ending calendar year, so
+# nrc_year 2023 means the 2022-2023 school year.
+# The Common Core of Data labels the same year by its starting calendar year,
+# so ccd_year 2022 also means 2022-2023. The two numbers differ by one on
+# purpose. Getting this wrong is the easiest way to silently merge the wrong
+# years together.
+#
+# 2022-2023 is used as the study year because it is the most recent year where
+# Nevada Report Card publishes free and reduced lunch percentage, English
+# learner percentage, graduation rate, ACT scores, and chronic absenteeism for
+# the same set of schools. More recent years are missing some of those fields.
+nrc_year: 2023
+ccd_year: 2022
+
+# ---------------------------------------------------------------------------
+# Which schools count as a high school for this study
+# ---------------------------------------------------------------------------
+sample:
+  # A school must enroll at least this many students. Very small schools
+  # produce unstable rates, and Nevada suppresses their published numbers.
+  min_enrollment: 100
+
+  # Alternative, virtual, and adult education schools are excluded. They serve
+  # different populations and many do not run a conventional bell schedule,
+  # so a start time means something different for them.
+  excluded_school_types:
+    - "Alternative School"
+    - "Special Education School"
+
+  # Fully online schools are excluded for the same reason.
+  exclude_virtual: true
+
+  # The school must offer grade 12, which screens out middle schools and
+  # combined schools that stop before the graduating year.
+  require_grade_12: true
+
+# ---------------------------------------------------------------------------
+# Outcome variables
+# ---------------------------------------------------------------------------
+# The primary outcome is the school average ACT composite score. Nevada
+# administers the ACT to every grade 11 student in a public school, so the
+# school average is not distorted by which students chose to sit the test.
+# That makes it more comparable across schools than a national ACT average.
+outcomes:
+  primary: act_composite
+  secondary:
+    - grad_rate
+    - ela_proficient_pct
+    - math_proficient_pct
+    - chronic_absent_pct
+
+# ---------------------------------------------------------------------------
+# Control variables, in the order they enter the regression models
+# ---------------------------------------------------------------------------
+# Model 1 is the raw unadjusted relationship. Each later model adds one block
+# of controls so that the start time coefficient can be watched as it moves.
+model_blocks:
+  - name: "Unadjusted"
+    controls: []
+  - name: "Plus poverty"
+    controls: ["direct_cert_pct"]
+  - name: "Plus size and English learners"
+    controls: ["direct_cert_pct", "enrollment_1000", "el_pct"]
+  - name: "Plus locale"
+    controls: ["direct_cert_pct", "enrollment_1000", "el_pct", "C(locale_group)"]
+  - name: "Plus district fixed effects"
+    controls: ["direct_cert_pct", "enrollment_1000", "el_pct", "C(locale_group)", "C(district)"]
+
+# ---------------------------------------------------------------------------
+# Stratified comparison
+# ---------------------------------------------------------------------------
+# Schools are split into poverty bands, then early and late starters are
+# compared inside each band. This is a cruder tool than regression but it is
+# much easier to read, and it does not assume the relationship is a straight
+# line.
+stratification:
+  # Cut points for the direct certification rate, expressed in percent.
+  poverty_band_edges: [0, 15, 30, 45, 100]
+  poverty_band_labels:
+    - "Lowest poverty"
+    - "Lower middle"
+    - "Upper middle"
+    - "Highest poverty"
+  # Schools starting before this time are called early, at or after it late.
+  # 8:00 is used because it is roughly the middle of the Nevada distribution
+  # and it is the threshold most often discussed in the sleep literature.
+  early_late_cutoff_minutes: 480   # 8:00 AM expressed as minutes after midnight
+
+# ---------------------------------------------------------------------------
+# Polite scraping settings
+# ---------------------------------------------------------------------------
+scraping:
+  # The user agent identifies the project to any site administrator who looks
+  # at their server logs, and gives them a way to get in touch.
+  #
+  # Put a real contact address here before running the scraper. It is left as a
+  # placeholder because this file is public on GitHub, and a plain email
+  # address in a public repository gets collected by spam crawlers within days.
+  # A throwaway address or a school address is the usual answer.
+  user_agent: >-
+    NevadaSchoolStartTimeStudy/1.0 (high school research project;
+    contact: your-email@example.com)
+  # Seconds to wait between requests to the same host. The study asks for two
+  # to three seconds. Several Nevada district sites publish a Crawl-delay of 5
+  # in robots.txt, and the scraper honours whichever value is larger.
+  min_delay_seconds: 2.0
+  max_delay_seconds: 3.0
+  request_timeout_seconds: 30
+  # How many pages deep to follow links from each seed page.
+  max_depth: 3
+  # Hard cap on pages fetched per district, so a bad link pattern cannot turn
+  # into an unbounded crawl.
+  max_pages_per_district: 30
