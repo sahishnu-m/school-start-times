@@ -30,7 +30,7 @@ import json
 import pandas as pd
 import requests
 
-from .config import CONFIG, INTERIM_DIR, RAW_DIR
+from .config import INTERIM_DIR, RAW_DIR, site_config
 from .polite import USER_AGENT, polite_json_get
 
 API_ROOT = "https://nevadareportcard.nv.gov/DIWAPI-NVReportCard/api/"
@@ -148,7 +148,7 @@ def run(year: int | None = None, restrict_to_codes: set[str] | None = None) -> p
     looks wrong it is possible to trace it back to the source without guessing
     what this module did to it.
     """
-    year = year or CONFIG["nrc_year"]
+    year = year or site_config("nevada")["nrc_year"]
     session = _make_session()
     clock = [0.0]   # shared timestamp for rate limiting across all calls
 

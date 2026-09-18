@@ -1,101 +1,41 @@
 # Central configuration for the study.
-# Every module reads from this file so that changing a year or a threshold
-# happens in one place instead of being scattered through the code.
+# Every module reads from this file so that changing a year, a threshold, or a
+# model specification happens in one place instead of being scattered through
+# the code.
 
 # ---------------------------------------------------------------------------
-# Study year
+# Which site the pipeline runs
 # ---------------------------------------------------------------------------
-# Nevada Report Card labels a school year by its ending calendar year, so
-# nrc_year 2023 means the 2022-2023 school year.
-# The Common Core of Data labels the same year by its starting calendar year,
-# so ccd_year 2022 also means 2022-2023. The two numbers differ by one on
-# purpose. Getting this wrong is the easiest way to silently merge the wrong
-# years together.
+# The study covers two places, and they play different roles.
 #
-# 2022-2023 is used as the study year because it is the most recent year where
-# Nevada Report Card publishes free and reduced lunch percentage, English
-# learner percentage, graduation rate, ACT scores, and chronic absenteeism for
-# the same set of schools. More recent years are missing some of those fields.
-nrc_year: 2023
-ccd_year: 2022
+#   nyc      The main analysis. Roughly 400 high schools inside one school
+#            system, with start times running from about 7:15 AM to past
+#            9:00 AM. This is the sample that can actually answer the research
+#            question, because the schools differ in when they start while
+#            sharing one district, one union contract, one funding formula,
+#            and one state.
+#
+#   nevada   The original sample, kept because it demonstrates the problem
+#            that motivated moving. Clark County sets one bell time for nearly
+#            all of its high schools, so 29 of 38 schools start at exactly
+#            7:00 AM and there is almost nothing for a model to measure.
+#
+# Run one with: python run_pipeline.py --site nyc
+active_site: nyc
 
 # ---------------------------------------------------------------------------
-# Which schools count as a high school for this study
+# Shared settings
 # ---------------------------------------------------------------------------
-sample:
-  # A school must enroll at least this many students. Very small schools
-  # produce unstable rates, and Nevada suppresses their published numbers.
-  min_enrollment: 100
-
-  # Alternative, virtual, and adult education schools are excluded. They serve
-  # different populations and many do not run a conventional bell schedule,
-  # so a start time means something different for them.
-  excluded_school_types:
-    - "Alternative School"
-    - "Special Education School"
-
-  # Fully online schools are excluded for the same reason.
-  exclude_virtual: true
-
-  # The school must offer grade 12, which screens out middle schools and
-  # combined schools that stop before the graduating year.
-  require_grade_12: true
-
-# ---------------------------------------------------------------------------
-# Outcome variables
-# ---------------------------------------------------------------------------
-# The primary outcome is the school average ACT composite score. Nevada
-# administers the ACT to every grade 11 student in a public school, so the
-# school average is not distorted by which students chose to sit the test.
-# That makes it more comparable across schools than a national ACT average.
-outcomes:
-  primary: act_composite
-  secondary:
-    - grad_rate
-    - ela_proficient_pct
-    - math_proficient_pct
-    - chronic_absent_pct
-
-# ---------------------------------------------------------------------------
-# Control variables, in the order they enter the regression models
-# ---------------------------------------------------------------------------
-# Model 1 is the raw unadjusted relationship. Each later model adds one block
-# of controls so that the start time coefficient can be watched as it moves.
-model_blocks:
-  - name: "Unadjusted"
-    controls: []
-  - name: "Plus poverty"
-    controls: ["direct_cert_pct"]
-  - name: "Plus size and English learners"
-    controls: ["direct_cert_pct", "enrollment_1000", "el_pct"]
-  - name: "Plus locale"
-    controls: ["direct_cert_pct", "enrollment_1000", "el_pct", "C(locale_group)"]
-  - name: "Plus district fixed effects"
-    controls: ["direct_cert_pct", "enrollment_1000", "el_pct", "C(locale_group)", "C(district)"]
-
-# ---------------------------------------------------------------------------
-# Stratified comparison
-# ---------------------------------------------------------------------------
-# Schools are split into poverty bands, then early and late starters are
-# compared inside each band. This is a cruder tool than regression but it is
-# much easier to read, and it does not assume the relationship is a straight
-# line.
 stratification:
-  # Cut points for the direct certification rate, expressed in percent.
-  poverty_band_edges: [0, 15, 30, 45, 100]
+  # Cut points for the poverty measure, in percent. Used to split schools into
+  # bands so that early and late starters can be compared inside a band.
+  poverty_band_edges: [0, 55, 70, 85, 100]
   poverty_band_labels:
     - "Lowest poverty"
     - "Lower middle"
     - "Upper middle"
     - "Highest poverty"
-  # Schools starting before this time are called early, at or after it late.
-  # 8:00 is used because it is roughly the middle of the Nevada distribution
-  # and it is the threshold most often discussed in the sleep literature.
-  early_late_cutoff_minutes: 480   # 8:00 AM expressed as minutes after midnight
 
-# ---------------------------------------------------------------------------
-# Polite scraping settings
-# ---------------------------------------------------------------------------
 scraping:
   # The user agent identifies the project to any site administrator who looks
   # at their server logs, and gives them a way to get in touch.
@@ -103,18 +43,159 @@ scraping:
   # Put a real contact address here before running the scraper. It is left as a
   # placeholder because this file is public on GitHub, and a plain email
   # address in a public repository gets collected by spam crawlers within days.
-  # A throwaway address or a school address is the usual answer.
   user_agent: >-
-    NevadaSchoolStartTimeStudy/1.0 (high school research project;
+    SchoolStartTimeStudy/1.0 (high school research project;
     contact: your-email@example.com)
-  # Seconds to wait between requests to the same host. The study asks for two
-  # to three seconds. Several Nevada district sites publish a Crawl-delay of 5
-  # in robots.txt, and the scraper honours whichever value is larger.
+  # Seconds to wait between requests to the same host. Several district sites
+  # publish a Crawl-delay of 5 in robots.txt, and the scraper honours whichever
+  # value is larger.
   min_delay_seconds: 2.0
   max_delay_seconds: 3.0
   request_timeout_seconds: 30
-  # How many pages deep to follow links from each seed page.
   max_depth: 3
-  # Hard cap on pages fetched per district, so a bad link pattern cannot turn
-  # into an unbounded crawl.
   max_pages_per_district: 30
+
+# ---------------------------------------------------------------------------
+# Site definitions
+# ---------------------------------------------------------------------------
+sites:
+
+  # =========================================================================
+  nyc:
+    label: "New York City public high schools"
+    year_label: "2018-2019"
+    # The column used for fixed effects. In New York City every school is in
+    # one school system, so the geographic grouping that varies is the borough.
+    group_column: borough
+    group_label: "Borough"
+
+    # Schools in the same building share a facility, a neighbourhood, and often
+    # a catchment, so their results are not independent draws. Standard errors
+    # are clustered on the building code to account for that. There are 254
+    # buildings behind the 427 schools.
+    cluster_column: building_code
+
+    # Early and late, split at 8:15 AM. The shared 8:00 AM threshold is the one
+    # the sleep literature discusses, but it is in the wrong place for New York
+    # City: only 26 of 425 schools start before it, which leaves the stratified
+    # comparison with four schools in some cells. 8:15 sits at the middle of the
+    # New York City distribution and splits the sample roughly in half.
+    early_late_cutoff_minutes: 495
+
+    # Schools that admit by citywide exam or audition take students who were
+    # already high performing, and they also start earlier than average. They
+    # are a small group with extreme outcomes, so the analysis refits without
+    # them to check whether they are driving any result.
+    robustness_exclude_admissions:
+      - "Specialized or test"
+      - "Audition"
+
+    sample:
+      min_enrollment: 100
+
+    outcomes:
+      primary: grad_rate
+      secondary:
+        - advanced_regents_pct
+        - attendance_rate
+        - college_career_rate
+        - dropout_pct
+
+    # Poverty here is the NYC Economic Need Index, which estimates the share of
+    # students facing economic hardship using public assistance records,
+    # neighbourhood poverty, and family circumstances. It is a better measure
+    # than free lunch eligibility, which is close to universal in New York City
+    # for the same reason it is in Clark County.
+    poverty_label: "Economic Need Index (percent)"
+
+    model_blocks:
+      - name: "Unadjusted"
+        controls: []
+      - name: "Plus poverty"
+        controls: ["poverty_pct"]
+      - name: "Plus size, English learners, disability"
+        controls: ["poverty_pct", "enrollment_1000", "el_pct", "swd_pct"]
+      - name: "Plus borough fixed effects"
+        controls: ["poverty_pct", "enrollment_1000", "el_pct", "swd_pct", "C(borough)"]
+      # New York City high schools are chosen, not zoned. A screened or
+      # audition school admits students who were already doing well, so its
+      # results say as much about who got in as about what the school did.
+      # Admissions method and applicant demand per seat are the closest
+      # available measures of that selection, and leaving them out would let
+      # selectivity masquerade as a start time effect.
+      - name: "Plus admissions selectivity"
+        controls:
+          - "poverty_pct"
+          - "enrollment_1000"
+          - "el_pct"
+          - "swd_pct"
+          - "C(borough)"
+          - "C(admissions_method)"
+          - "applicants_per_seat"
+
+  # =========================================================================
+  nevada:
+    label: "Nevada public high schools"
+    year_label: "2022-2023"
+    group_column: district
+    group_label: "District"
+
+    # Nevada Report Card labels a school year by its ending calendar year, so
+    # 2023 means 2022-2023. The Common Core of Data labels the same year by its
+    # starting year, so 2022 also means 2022-2023. The two numbers differ by
+    # one on purpose.
+    nrc_year: 2023
+    ccd_year: 2022
+
+    sample:
+      min_enrollment: 100
+      excluded_school_types:
+        - "Alternative School"
+        - "Special Education School"
+      exclude_virtual: true
+      require_grade_12: true
+
+    outcomes:
+      primary: act_composite
+      secondary:
+        - grad_rate
+        - ela_proficient_pct
+        - math_proficient_pct
+        - chronic_absent_pct
+
+    # Nevada uses the direct certification rate: students confirmed low income
+    # through SNAP, TANF, or foster care records. Free and reduced lunch
+    # percentage is unusable in Nevada because Clark County feeds every student
+    # under the Community Eligibility Provision, which puts its reported rate at
+    # 100 percent everywhere regardless of neighbourhood income.
+    poverty_label: "Direct certification rate (percent)"
+
+    model_blocks:
+      - name: "Unadjusted"
+        controls: []
+      - name: "Plus poverty"
+        controls: ["poverty_pct"]
+      - name: "Plus size and English learners"
+        controls: ["poverty_pct", "enrollment_1000", "el_pct"]
+      - name: "Plus locale"
+        controls: ["poverty_pct", "enrollment_1000", "el_pct", "C(locale_group)"]
+      - name: "Plus district fixed effects"
+        controls: ["poverty_pct", "enrollment_1000", "el_pct", "C(locale_group)", "C(district)"]
+
+    # Nevada poverty is measured on a different scale from the New York City
+    # index, so it needs its own band edges.
+    stratification:
+      poverty_band_edges: [0, 15, 30, 45, 100]
+      poverty_band_labels:
+        - "Lowest poverty"
+        - "Lower middle"
+        - "Upper middle"
+        - "Highest poverty"
+
+# ---------------------------------------------------------------------------
+# Early and late
+# ---------------------------------------------------------------------------
+# Schools starting before this time are called early, at or after it late.
+# 8:00 AM sits near the middle of the New York City distribution and is the
+# threshold most often discussed in the sleep research literature.
+early_late_cutoff_minutes: 480

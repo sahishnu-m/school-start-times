@@ -1,0 +1,428 @@
+school_id,school_name,borough,district,start_minutes,start_time_raw,building_code,grad_rate,advanced_regents_pct,dropout_pct,attendance_rate,college_career_rate,cohort_size,poverty_pct,el_pct,swd_pct,enrollment,admissions_method,applicants_per_seat,outcome_censored,enrollment_1000,start_hours,start_group,poverty_band
+16K498,Brooklyn High School for Law and Technology,Brooklyn,New York City,480.0,8am,K987,76.2,0.0,1.6,85.0,49.0,126.0,81.2,6.1,22.1,589.0,Screened,8.0,False,0.589,8.0,Early,Upper middle
+17K524,International High School at Prospect Heights,Brooklyn,New York City,527.0,8:47am,K440,49.0,0.0,13.5,88.0,53.0,104.0,95.9,87.8,4.1000000000000005,368.0,Screened,2.0,False,0.368,8.783333333333333,Late,Highest poverty
+02M531,Repertory Company High School for Theatre Arts,Manhattan,New York City,495.0,8:15am,M896,100.0,33.9,0.0,91.0,87.0,59.0,54.1,0.4,16.900000000000002,237.0,Audition,6.0,False,0.237,8.25,Late,Lowest poverty
+05M670,Thurgood Marshall Academy for Learning and Social Change,Manhattan,New York City,500.0,8:20am,M970,77.4,0.0,6.0,91.0,60.0,84.0,78.0,4.3,23.4,560.0,Screened,5.0,False,0.56,8.333333333333334,Late,Upper middle
+15K423,Brooklyn Frontiers High School,Brooklyn,New York City,500.0,8:20am,K520,14.9,0.0,42.6,76.0,,101.0,78.2,4.9,41.8,184.0,Other,1.0,False,0.184,8.333333333333334,Late,Upper middle
+03M291,West End Secondary School,Manhattan,New York City,540.0,9am,M837,,,,,,,18.1,0.5,21.5,432.0,Screened,13.0,False,0.432,9.0,Late,Lowest poverty
+24Q299,Bard High School Early College Queens,Queens,New York City,540.0,9am,Q735,97.2,0.0,0.0,97.0,94.0,141.0,40.400000000000006,0.2,5.3,643.0,Screened,32.0,False,0.643,9.0,Late,Lowest poverty
+17K408,Academy of Hospitality and Tourism,Brooklyn,New York City,480.0,8am,K465,86.1,0.0,5.6,82.0,30.0,36.0,80.60000000000001,20.4,20.9,196.0,Educational option,2.0,False,0.196,8.0,Early,Upper middle
+19K683,School for Classics High School,Brooklyn,New York City,480.0,8am,K218,68.5,2.7,20.5,84.0,28.000000000000004,73.0,89.7,26.700000000000003,21.9,270.0,Educational option,2.0,False,0.27,8.0,Early,Highest poverty
+02M407,Institute for Collaborative Education (ICE),Manhattan,New York City,480.0,8am,M475,92.5,0.0,0.0,92.0,75.0,67.0,35.099999999999994,0.4,16.5,486.0,Screened,13.0,False,0.486,8.0,Early,Lowest poverty
+27Q302,"Queens High School for Information, Research, and Technology",Queens,New York City,500.0,8:20am,Q465,80.3,11.4,12.1,84.0,31.0,132.0,79.9,21.7,20.6,466.0,Educational option,7.0,False,0.466,8.333333333333334,Late,Upper middle
+12X251,Explorations Academy,Bronx,New York City,480.0,8am,X098,64.0,7.0,18.0,81.0,37.0,100.0,91.2,21.8,26.4,326.0,Educational option,3.0,False,0.326,8.0,Early,Highest poverty
+03M485,Fiorello H. LaGuardia High School of Music & Art and Performing Arts,Manhattan,New York City,480.0,8am,M485,98.6,80.2,0.1,95.0,82.0,716.0,29.3,0.2,3.4000000000000004,2760.0,Audition,,False,2.76,8.0,Early,Lowest poverty
+15K429,Digital Arts and Cinema Technology High School,Brooklyn,New York City,495.0,8:15am,K293,97.7,2.3,0.0,89.0,71.0,43.0,73.8,0.4,21.5,246.0,Screened,8.0,False,0.246,8.25,Late,Upper middle
+22K630,Professional Pathways High School,Brooklyn,New York City,540.0,9am,K495,20.4,0.0,17.2,56.00000000000001,,93.0,71.89999999999999,3.8,21.0,210.0,Other,1.0,False,0.21,9.0,Late,Upper middle
+21K559,Life Academy High School for Film and Music,Brooklyn,New York City,435.0,7:15am,K400,92.3,10.8,0.0,88.0,60.0,65.0,77.4,9.8,23.8,286.0,Educational option,6.0,False,0.286,7.25,Early,Upper middle
+24Q560,"Robert F. Wagner, Jr. Secondary School for Arts and Technology",Queens,New York City,510.0,8:30am,Q891,96.6,7.6,0.0,92.0,82.0,119.0,58.1,2.8000000000000003,16.6,649.0,Educational option,12.0,False,0.649,8.5,Late,Lower middle
+11X290,Bronx Academy of Health Careers,Bronx,New York City,492.0,8:12am,X425,83.3,10.7,6.0,88.0,59.0,84.0,84.89999999999999,13.1,20.9,359.0,Educational option,8.0,False,0.359,8.2,Early,Upper middle
+09X250,Eximius College Preparatory Academy: A College Board School,Bronx,New York City,480.0,8am,X002,76.5,7.8,8.7,85.0,56.99999999999999,115.0,85.9,8.6,25.8,430.0,Educational option,16.0,False,0.43,8.0,Early,Highest poverty
+03M417,Frank McCourt High School,Manhattan,New York City,510.0,8:30am,M470,92.6,3.2,0.0,93.0,78.0,95.0,48.6,2.9000000000000004,20.8,413.0,Screened,15.0,False,0.413,8.5,Late,Lowest poverty
+17K547,Brooklyn Academy of Science and the Environment (BASE),Brooklyn,New York City,510.0,8:30am,K440,67.5,0.0,8.3,90.0,56.99999999999999,120.0,76.0,5.800000000000001,16.2,382.0,Educational option,4.0,False,0.382,8.5,Late,Upper middle
+02M437,Hudson High School of Learning Technologies,Manhattan,New York City,525.0,8:45am,M440,75.2,0.0,6.4,79.0,54.0,109.0,81.8,8.799999999999999,25.6,476.0,Unscreened,8.0,False,0.476,8.75,Late,Upper middle
+27Q323,Scholars' Academy,Queens,New York City,525.0,8:45am,Q180,100.0,86.6,0.0,95.0,98.0,157.0,33.1,0.1,12.9,1351.0,Screened,13.0,False,1.351,8.75,Late,Lowest poverty
+11X545,Bronx Aerospace High School,Bronx,New York City,499.0,8:19am,X425,61.6,0.0,16.3,82.0,46.0,86.0,86.0,18.0,26.4,322.0,Educational option,2.0,False,0.322,8.316666666666666,Late,Highest poverty
+28Q687,Queens High School for the Sciences at York College,Queens,New York City,480.0,8am,Q774,99.1,92.7,0.0,97.0,91.0,110.0,46.8,0.0,0.0,475.0,Specialized or test,,False,0.475,8.0,Early,Lowest poverty
+17K528,The High School for Global Citizenship,Brooklyn,New York City,490.0,8:10am,K440,83.8,0.0,10.8,90.0,33.0,37.0,76.9,15.0,16.900000000000002,213.0,Educational option,5.0,False,0.213,8.166666666666666,Early,Upper middle
+17K751,Academy for Health Careers,Brooklyn,New York City,510.0,8:30am,K625,75.7,0.0,10.8,83.0,56.00000000000001,74.0,81.2,3.7,14.3,301.0,Unscreened,5.0,False,0.301,8.5,Late,Upper middle
+18K576,Victory Collegiate High School,Brooklyn,New York City,505.0,8:25am,K515,63.3,0.0,7.6,88.0,53.0,79.0,76.4,6.7,25.5,341.0,Unscreened,2.0,False,0.341,8.416666666666666,Late,Upper middle
+19K404,Academy for Young Writers,Brooklyn,New York City,540.0,9am,K422,91.4,0.0,2.9,88.0,73.0,70.0,80.9,3.4000000000000004,22.1,551.0,Educational option,9.0,False,0.551,9.0,Late,Upper middle
+15K684,Millennium Brooklyn High School,Brooklyn,New York City,480.0,8am,K460,98.7,67.9,0.6,94.0,88.0,159.0,39.3,0.3,15.1,675.0,Screened,39.0,False,0.675,8.0,Early,Lowest poverty
+31R445,Port Richmond High School,Staten Island,New York City,480.0,8am,R445,68.6,11.8,9.1,86.0,36.0,363.0,71.7,9.2,27.500000000000004,1564.0,Screened,4.0,False,1.564,8.0,Early,Upper middle
+23K514,Frederick Douglass Academy VII High School,Brooklyn,New York City,562.0,9:22am,K175,77.8,0.0,8.3,82.0,37.0,36.0,86.1,3.9,32.7,153.0,Educational option,2.0,False,0.153,9.366666666666667,Late,Highest poverty
+15K497,The Boerum Hill School for International Studies,Brooklyn,New York City,495.0,8:15am,K293,72.5,0.0,0.0,80.0,56.00000000000001,51.0,48.2,7.199999999999999,20.7,723.0,Screened,4.0,False,0.723,8.25,Late,Lowest poverty
+06M423,High School for Excellence and Innovation,Manhattan,New York City,525.0,8:45am,M052,54.9,0.0,16.9,68.0,,71.0,94.5,51.1,19.2,182.0,Other,1.0,False,0.182,8.75,Late,Highest poverty
+02M294,Essex Street Academy,Manhattan,New York City,565.0,9:25am,M445,87.5,0.0,2.8,87.0,74.0,72.0,68.0,3.5000000000000004,26.8,339.0,Unscreened,21.0,False,0.339,9.416666666666666,Late,Lower middle
+05M304,Mott Hall High School,Manhattan,New York City,480.0,8am,M136,62.7,0.0,8.0,80.0,36.0,75.0,90.5,20.1,31.6,288.0,Unscreened,4.0,False,0.288,8.0,Early,Highest poverty
+02M413,School of the Future High School,Manhattan,New York City,515.0,8:35am,M660,89.0,0.0,0.9,94.0,79.0,109.0,41.0,0.7000000000000001,21.2,749.0,Screened,17.0,False,0.749,8.583333333333334,Late,Lowest poverty
+04M372,Esperanza Preparatory Academy,Manhattan,New York City,480.0,8am,M117,72.3,6.4,7.4,86.0,41.0,94.0,92.1,32.5,24.6,569.0,Screened,4.0,False,0.569,8.0,Early,Highest poverty
+07X334,International Community High School,Bronx,New York City,540.0,9am,X139,77.7,0.0,15.7,89.0,42.0,121.0,98.7,81.39999999999999,6.6000000000000005,425.0,Screened,3.0,False,0.425,9.0,Late,Highest poverty
+02M655,Life Sciences Secondary School,Manhattan,New York City,500.0,8:20am,M645,70.1,1.0,5.2,80.0,47.0,97.0,84.8,10.4,21.6,425.0,Educational option,2.0,False,0.425,8.333333333333334,Late,Upper middle
+31R450,Curtis High School,Staten Island,New York City,540.0,9am,R450,77.3,19.8,9.0,85.0,48.0,655.0,72.3,8.200000000000001,19.0,2586.0,Unscreened,4.0,False,2.586,9.0,Late,Upper middle
+18K637,Academy for Conservation and the Environment,Brooklyn,New York City,485.0,8:05am,K515,86.0,2.3,7.0,82.0,48.0,86.0,75.1,13.3,18.0,300.0,Educational option,4.0,False,0.3,8.083333333333334,Early,Upper middle
+21K410,Abraham Lincoln High School,Brooklyn,New York City,465.0,7:45am,K410,81.6,11.1,8.8,86.0,45.0,441.0,81.3,17.599999999999998,16.400000000000002,1904.0,Educational option,5.0,False,1.904,7.75,Early,Upper middle
+09X543,High School for Violin and Dance,Bronx,New York City,490.0,8:10am,X400,58.3,0.0,28.3,71.0,43.0,60.0,92.5,17.8,30.8,253.0,Educational option,3.0,False,0.253,8.166666666666666,Early,Highest poverty
+02M303,The Facing History School,Manhattan,New York City,520.0,8:40am,M535,73.7,0.0,14.1,82.0,55.00000000000001,99.0,85.39999999999999,11.0,24.7,372.0,Educational option,3.0,False,0.372,8.666666666666666,Late,Highest poverty
+08X558,Westchester Square Academy,Bronx,New York City,495.0,8:15am,X405,71.5,4.6,11.9,87.0,60.0,151.0,72.6,9.6,21.5,554.0,Educational option,12.0,False,0.554,8.25,Late,Upper middle
+02M412,N.Y.C. Lab School for Collaborative Studies,Manhattan,New York City,480.0,8am,M070,95.7,55.7,0.0,94.0,87.0,115.0,29.2,0.6,20.0,471.0,Screened,33.0,False,0.471,8.0,Early,Lowest poverty
+04M495,Park East High School,Manhattan,New York City,525.0,8:45am,M495,92.7,20.2,0.0,94.0,69.0,109.0,75.9,4.1000000000000005,17.5,389.0,Screened,38.0,False,0.389,8.75,Late,Upper middle
+02M047,47 The American Sign Language and English Secondary School,Manhattan,New York City,495.0,8:15am,M047,92.5,15.0,7.5,86.0,62.0,40.0,76.8,4.6,27.0,196.0,Screened,6.0,False,0.196,8.25,Late,Upper middle
+07X600,Alfred E. Smith Career and Technical Education High School,Bronx,New York City,480.0,8am,X600,84.3,1.0,5.9,84.0,37.0,102.0,89.2,19.3,27.700000000000003,455.0,Educational option,5.0,False,0.455,8.0,Early,Highest poverty
+14K449,"Brooklyn Latin School, The",Brooklyn,New York City,480.0,8am,K049,97.4,64.7,0.0,93.0,85.0,156.0,53.7,0.0,2.3,698.0,Specialized or test,,False,0.698,8.0,Early,Lowest poverty
+09X404,School for Excellence,Bronx,New York City,490.0,8:10am,X400,47.9,0.0,20.2,66.0,35.0,94.0,91.9,27.0,27.9,326.0,Educational option,3.0,False,0.326,8.166666666666666,Early,Highest poverty
+06M540,A. Philip Randolph Campus High School,Manhattan,New York City,480.0,8am,M540,79.0,12.0,5.8,84.0,53.0,309.0,85.5,14.2,15.4,1503.0,Educational option,9.0,False,1.503,8.0,Early,Highest poverty
+26Q495,Bayside High School,Queens,New York City,480.0,8am,Q405,96.5,48.6,0.4,93.0,84.0,710.0,50.6,8.200000000000001,16.6,2850.0,Audition,18.0,False,2.85,8.0,Early,Lowest poverty
+02M425,Leadership and Public Service High School,Manhattan,New York City,510.0,8:30am,M894,74.7,6.7,6.0,83.0,44.0,150.0,82.6,4.9,20.1,473.0,Educational option,2.0,False,0.473,8.5,Late,Upper middle
+10X565,High School for Energy and Technology,Bronx,New York City,504.0,8:24am,X660,71.2,4.8,8.7,83.0,48.0,104.0,88.3,14.3,26.8,406.0,Educational option,8.0,False,0.406,8.4,Late,Highest poverty
+11X249,Bronx Health Sciences High School,Bronx,New York City,435.0,7:15am,X455,100.0,19.1,0.0,93.0,87.0,47.0,69.19999999999999,4.7,12.9,295.0,Educational option,14.0,False,0.295,7.25,Early,Lower middle
+21K468,Kingsborough Early College School,Brooklyn,New York City,510.0,8:30am,K400,94.1,24.7,0.0,91.0,89.0,85.0,65.2,1.3,19.3,669.0,Screened,16.0,False,0.669,8.5,Late,Lower middle
+02M135,The Urban Assembly School for Emergency Management,Manhattan,New York City,530.0,8:50am,M520,87.1,6.5,8.1,83.0,,62.0,80.5,3.4000000000000004,21.1,265.0,Educational option,2.0,False,0.265,8.833333333333334,Late,Upper middle
+32K403,Academy for Environmental Leadership,Brooklyn,New York City,495.0,8:15am,K480,71.6,3.0,11.9,80.0,44.0,67.0,88.4,43.7,19.3,238.0,Educational option,2.0,False,0.238,8.25,Late,Highest poverty
+02M420,High School for Health Professions and Human Services,Manhattan,New York City,540.0,9am,M475,91.8,40.9,4.2,92.0,72.0,425.0,74.2,4.2,13.3,1825.0,Screened,12.0,False,1.825,9.0,Late,Upper middle
+16K765,Nelson Mandela High School,Brooklyn,New York City,540.0,9am,K455,77.3,0.0,7.6,78.0,,66.0,84.39999999999999,0.8,30.2,252.0,Unscreened,2.0,False,0.252,9.0,Late,Upper middle
+25Q670,Robert F. Kennedy Community High School,Queens,New York City,480.0,8am,Q707,85.9,28.6,3.2,90.0,67.0,185.0,69.6,8.0,17.8,702.0,Educational option,3.0,False,0.702,8.0,Early,Lower middle
+19K507,Performing Arts and Technology High School,Brooklyn,New York City,485.0,8:05am,K435,91.3,0.0,5.4,86.0,41.0,92.0,85.5,18.1,22.7,409.0,Unscreened,10.0,False,0.409,8.083333333333334,Early,Highest poverty
+09X505,"Bronx School for Law, Government and Justice",Bronx,New York City,465.0,7:45am,X460,77.3,14.1,5.5,91.0,71.0,128.0,85.6,10.8,21.7,751.0,Educational option,42.0,False,0.751,7.75,Early,Highest poverty
+31R600,Ralph R. McKee Career and Technical Education High School,Staten Island,New York City,465.0,7:45am,R600,73.4,25.2,5.6,87.0,30.0,143.0,70.1,6.5,32.6,795.0,Educational option,5.0,False,0.795,7.75,Early,Upper middle
+09X365,Academy for Language and Technology,Bronx,New York City,480.0,8am,X082,98.6,2.7,0.0,89.0,74.0,73.0,99.1,73.1,6.5,324.0,Screened,21.0,False,0.324,8.0,Early,Highest poverty
+13K265,Dr. Susan S. McKinney Secondary School of the Arts,Brooklyn,New York City,480.0,8am,K265,63.6,1.8,1.8,76.0,45.0,55.0,87.4,3.8,28.1,313.0,Audition,6.0,False,0.313,8.0,Early,Highest poverty
+01M448,University Neighborhood High School,Manhattan,New York City,495.0,8:15am,M446,92.9,18.2,4.0,93.0,70.0,99.0,82.0,14.7,16.8,483.0,Educational option,3.0,False,0.483,8.25,Late,Upper middle
+18K633,High School for Medical Professions,Brooklyn,New York City,490.0,8:10am,K500,81.4,0.0,2.7,91.0,69.0,113.0,70.6,4.6,15.2,460.0,Educational option,9.0,False,0.46,8.166666666666666,Early,Upper middle
+19K615,Transit Tech Career and Technical Education High School,Brooklyn,New York City,490.0,8:10am,K615,67.6,1.2,7.6,84.0,45.0,170.0,78.5,6.2,25.1,676.0,Educational option,7.0,False,0.676,8.166666666666666,Early,Upper middle
+20K445,New Utrecht High School,Brooklyn,New York City,550.0,9:10am,K445,73.9,30.0,9.3,87.0,59.0,873.0,77.60000000000001,19.8,16.400000000000002,3427.0,Educational option,11.0,False,3.427,9.166666666666666,Late,Upper middle
+07X427,Community School for Social Justice,Bronx,New York City,495.0,8:15am,X884,69.4,0.0,23.6,79.0,53.0,72.0,92.1,20.5,26.0,327.0,Educational option,7.0,False,0.327,8.25,Late,Highest poverty
+24Q236,International High School for Health Sciences,Queens,New York City,510.0,8:30am,Q455,66.7,0.0,14.7,88.0,,75.0,96.1,74.7,3.3000000000000003,273.0,Screened,5.0,False,0.273,8.5,Late,Highest poverty
+27Q260,Frederick Douglass Academy VI High School,Queens,New York City,500.0,8:20am,Q465,42.4,0.0,21.7,83.0,34.0,92.0,87.3,30.3,19.9,346.0,Unscreened,2.0,False,0.346,8.333333333333334,Late,Highest poverty
+11X514,The Bronxwood Preparatory Academy,Bronx,New York City,475.0,7:55am,X362,63.5,0.0,17.7,91.0,39.0,96.0,73.7,9.7,21.9,360.0,Educational option,4.0,False,0.36,7.916666666666667,Early,Upper middle
+09X227,Bronx Collegiate Academy,Bronx,New York City,500.0,8:20am,X410,75.2,11.9,8.9,85.0,33.0,101.0,93.4,19.1,21.1,388.0,Educational option,5.0,False,0.388,8.333333333333334,Late,Highest poverty
+02M282,Urban Assembly Maker Academy,Manhattan,New York City,525.0,8:45am,M520,86.8,0.0,3.9,89.0,,76.0,70.19999999999999,3.8,19.5,390.0,Educational option,5.0,False,0.39,8.75,Late,Upper middle
+03M415,Wadleigh Secondary School for the Performing & Visual Arts,Manhattan,New York City,480.0,8am,M088,85.1,2.1,4.3,81.0,40.0,47.0,87.3,2.9000000000000004,22.4,313.0,Audition,3.0,False,0.313,8.0,Early,Highest poverty
+10X477,Marble Hill High School for International Studies,Bronx,New York City,510.0,8:30am,X475,93.8,42.0,1.8,93.0,82.0,112.0,85.5,29.7,13.4,448.0,Screened,35.0,False,0.448,8.5,Late,Highest poverty
+29Q243,Institute for Health Professions at Cambria Heights,Queens,New York City,519.0,8:39am,Q490,88.0,0.0,4.0,89.0,,100.0,66.7,9.7,10.4,413.0,Educational option,3.0,False,0.413,8.65,Late,Lower middle
+25Q281,East-West School of International Studies,Queens,New York City,480.0,8am,Q237,95.9,43.8,1.4,91.0,87.0,73.0,65.8,6.9,13.900000000000002,649.0,Educational option,12.0,False,0.649,8.0,Early,Lower middle
+06M467,High School for Law and Public Service,Manhattan,New York City,480.0,8am,M465,51.8,1.4,27.7,88.0,42.0,141.0,91.5,39.1,25.6,481.0,Educational option,4.0,False,0.481,8.0,Early,Highest poverty
+21K540,John Dewey High School,Brooklyn,New York City,495.0,8:15am,K540,74.4,17.4,8.7,88.0,56.99999999999999,609.0,78.7,17.7,12.9,2203.0,Educational option,6.0,False,2.203,8.25,Late,Upper middle
+15K592,Khalil Gibran International Academy,Brooklyn,New York City,480.0,8am,K806,50.7,6.0,6.0,85.0,56.99999999999999,67.0,85.7,37.2,19.0,226.0,Educational option,1.0,False,0.226,8.0,Early,Highest poverty
+27Q400,August Martin High School,Queens,New York City,490.0,8:10am,Q400,83.6,0.0,9.1,82.0,24.0,55.0,71.8,6.1,23.200000000000003,311.0,Unscreened,1.0,False,0.311,8.166666666666666,Early,Upper middle
+21K728,Liberation Diploma Plus High School,Brooklyn,New York City,530.0,8:50am,K728,14.3,0.0,23.1,53.0,,91.0,86.4,8.6,39.2,245.0,Other,1.0,False,0.245,8.833333333333334,Late,Highest poverty
+29Q492,"Mathematics, Science Research and Technology Magnet High School",Queens,New York City,500.0,8:20am,Q490,72.1,0.9,8.1,80.0,41.0,111.0,68.60000000000001,14.499999999999998,10.8,407.0,Educational option,2.0,False,0.407,8.333333333333334,Late,Lower middle
+24Q267,High School of Applied Communication,Queens,New York City,500.0,8:20am,Q735,95.1,17.3,1.2,89.0,65.0,81.0,67.0,6.9,17.2,407.0,Unscreened,7.0,False,0.407,8.333333333333334,Late,Lower middle
+02M439,Manhattan Village Academy,Manhattan,New York City,495.0,8:15am,M873,96.2,91.5,0.0,98.0,91.0,106.0,66.9,2.0,15.7,452.0,Screened,58.0,False,0.452,8.25,Late,Lower middle
+10X368,In-Tech Academy (M.S. / High School 368),Bronx,New York City,534.0,8:54am,X368,90.7,0.0,5.6,91.0,78.0,108.0,79.80000000000001,16.8,21.7,1022.0,Screened,10.0,False,1.022,8.9,Late,Upper middle
+13K350,Urban Assembly High School of Music and Art,Brooklyn,New York City,493.0,8:13am,K805,84.0,0.0,6.0,81.0,60.0,50.0,81.0,4.3,23.7,207.0,Educational option,4.0,False,0.207,8.216666666666667,Early,Upper middle
+27Q308,Robert H. Goddard High School of Communication Arts and Technology,Queens,New York City,440.0,7:20am,Q202,88.6,25.9,5.7,92.0,65.0,158.0,55.400000000000006,3.8,19.1,629.0,Educational option,8.0,False,0.629,7.333333333333333,Early,Lower middle
+21K337,International High School at Lafayette,Brooklyn,New York City,555.0,9:15am,K400,53.3,0.0,15.2,89.0,51.0,92.0,98.3,88.8,2.3,347.0,Screened,2.0,False,0.347,9.25,Late,Highest poverty
+28Q350,Jamaica Gateway to the Sciences,Queens,New York City,495.0,8:15am,Q470,89.7,43.7,6.3,88.0,73.0,126.0,65.2,9.9,14.4,494.0,Educational option,19.0,False,0.494,8.25,Late,Lower middle
+16K688,The Brooklyn Academy of Global Finance,Brooklyn,New York City,495.0,8:15am,K057,72.7,0.0,13.6,78.0,26.0,22.0,92.4,14.3,26.700000000000003,105.0,Educational option,2.0,False,0.105,8.25,Late,Highest poverty
+28Q620,Thomas A. Edison Career and Technical Education High School,Queens,New York City,480.0,8am,Q620,91.5,44.9,2.1,93.0,73.0,517.0,59.6,2.2,13.7,2196.0,Screened,16.0,False,2.196,8.0,Early,Lower middle
+06M463,High School for Media and Communications,Manhattan,New York City,480.0,8am,M465,66.3,0.0,11.2,90.0,35.0,89.0,92.3,49.7,17.4,396.0,Educational option,3.0,False,0.396,8.0,Early,Highest poverty
+06M468,High School for Health Careers and Sciences,Manhattan,New York City,480.0,8am,M465,69.5,1.2,14.6,87.0,39.0,82.0,91.8,41.1,18.2,423.0,Educational option,4.0,False,0.423,8.0,Early,Highest poverty
+10X237,"The Marie Curie School for Medicine, Nursing, and Health Professions",Bronx,New York City,490.0,8:10am,X143,64.7,0.0,8.4,82.0,68.0,119.0,84.39999999999999,12.8,23.5,430.0,Educational option,4.0,False,0.43,8.166666666666666,Early,Upper middle
+01M509,Marta Valle High School,Manhattan,New York City,480.0,8am,M025,86.8,2.6,5.3,79.0,49.0,38.0,80.80000000000001,6.3,27.6,127.0,Educational option,1.0,False,0.127,8.0,Early,Upper middle
+28Q167,Metropolitan Expeditionary Learning School,Queens,New York City,510.0,8:30am,Q686,94.4,24.1,1.9,93.0,90.0,108.0,51.9,2.0,18.6,832.0,Unscreened,23.0,False,0.832,8.5,Late,Lowest poverty
+08X367,"Archimedes Academy for Math, Science and Technology Applications",Bronx,New York City,550.0,9:10am,X174,62.8,2.1,19.1,78.0,43.0,94.0,83.39999999999999,10.6,27.200000000000003,659.0,Educational option,4.0,False,0.659,9.166666666666666,Late,Upper middle
+17K539,High School for Service & Learning at Erasmus,Brooklyn,New York City,480.0,8am,K465,78.5,1.3,12.7,84.0,49.0,79.0,81.89999999999999,14.8,21.5,297.0,Educational option,2.0,False,0.297,8.0,Early,Upper middle
+24Q455,Newtown High School,Queens,New York City,480.0,8am,Q455,67.8,10.4,11.1,90.0,49.0,512.0,78.8,23.9,13.8,1805.0,Educational option,4.0,False,1.805,8.0,Early,Upper middle
+27Q475,Richmond Hill High School,Queens,New York City,480.0,8am,Q475,61.3,3.7,22.2,87.0,42.0,465.0,76.7,23.0,14.4,1576.0,Educational option,4.0,False,1.576,8.0,Early,Upper middle
+07X548,Careers In Sports High School,Bronx,New York City,505.0,8:25am,X790,58.6,0.0,21.8,77.0,56.99999999999999,133.0,88.7,17.4,25.0,528.0,Educational option,8.0,False,0.528,8.416666666666666,Late,Highest poverty
+23K493,Brooklyn Collegiate: A College Board School,Brooklyn,New York City,490.0,8:10am,K055,68.9,1.6,9.8,85.0,50.0,61.0,82.69999999999999,5.9,23.0,239.0,Educational option,3.0,False,0.239,8.166666666666666,Early,Upper middle
+02M545,High School for Dual Language and Asian Studies,Manhattan,New York City,480.0,8am,M445,98.9,90.9,0.0,98.0,86.0,88.0,78.4,13.4,3.2,402.0,Screened,14.0,False,0.402,8.0,Early,Upper middle
+15K667,Sunset Park High School,Brooklyn,New York City,525.0,8:45am,K564,76.2,13.3,5.6,87.0,51.0,286.0,86.0,21.9,21.2,1216.0,Unscreened,2.0,False,1.216,8.75,Late,Highest poverty
+02M280,Manhattan Early College School for Advertising,Manhattan,New York City,505.0,8:25am,M520,96.3,0.0,2.5,92.0,,80.0,72.39999999999999,3.8,19.2,416.0,Educational option,7.0,False,0.416,8.416666666666666,Late,Upper middle
+06M348,Washington Heights Expeditionary Learning School (WHEELS),Manhattan,New York City,510.0,8:30am,M143,87.8,17.8,6.7,84.0,56.00000000000001,90.0,83.5,16.1,20.5,864.0,Educational option,7.0,False,0.864,8.5,Late,Upper middle
+13K439,Brooklyn International High School,Brooklyn,New York City,525.0,8:45am,K805,67.6,0.0,10.5,92.0,63.0,105.0,95.3,76.3,3.1,359.0,Screened,8.0,False,0.359,8.75,Late,Highest poverty
+07X500,Hostos-Lincoln Academy of Science,Bronx,New York City,480.0,8am,X162,82.8,15.1,3.2,91.0,77.0,93.0,85.2,3.3000000000000003,19.9,547.0,Screened,19.0,False,0.547,8.0,Early,Highest poverty
+14K614,Young Women's Leadership School of Brooklyn (TYWLS),Brooklyn,New York City,465.0,7:45am,K147,96.8,25.8,3.2,88.0,97.0,31.0,80.10000000000001,8.6,19.4,382.0,Screened,6.0,False,0.382,7.75,Early,Upper middle
+07X522,Bronx Design and Construction Academy,Bronx,New York City,470.0,7:50am,X600,65.3,2.0,19.4,76.0,38.0,98.0,87.3,16.8,29.2,452.0,Educational option,3.0,False,0.452,7.833333333333333,Early,Highest poverty
+07X473,Mott Haven Village Preparatory High School,Bronx,New York City,480.0,8am,X470,46.3,0.0,25.0,78.0,48.0,80.0,92.7,20.0,30.8,315.0,Educational option,4.0,False,0.315,8.0,Early,Highest poverty
+18K617,High School for Innovation in Advertising and Media,Brooklyn,New York City,480.0,8am,K500,78.7,0.0,4.9,86.0,53.0,61.0,71.5,9.2,20.8,240.0,Educational option,3.0,False,0.24,8.0,Early,Upper middle
+10X351,Bronx Collaborative High School,Bronx,New York City,549.0,9:09am,X440,67.5,0.0,5.8,80.0,,120.0,84.8,19.1,22.7,587.0,Educational option,11.0,False,0.587,9.15,Late,Upper middle
+25Q460,Flushing High School,Queens,New York City,480.0,8am,Q460,68.1,8.5,15.6,85.0,42.0,398.0,77.0,20.8,12.5,1595.0,Educational option,5.0,False,1.595,8.0,Early,Upper middle
+30Q502,Information Technology High School,Queens,New York City,435.0,7:15am,Q725,72.7,11.3,6.9,90.0,59.0,231.0,75.5,7.3,19.4,1011.0,Educational option,7.0,False,1.011,7.25,Early,Upper middle
+30Q445,William Cullen Bryant High School,Queens,New York City,530.0,8:50am,Q445,70.7,7.9,9.0,89.0,52.0,632.0,79.5,18.6,14.4,2344.0,Screened,5.0,False,2.344,8.833333333333334,Late,Upper middle
+10X268,Kingsbridge International High School,Bronx,New York City,480.0,8am,X430,59.4,4.2,15.4,87.0,32.0,143.0,98.6,87.2,4.3,491.0,Screened,3.0,False,0.491,8.0,Early,Highest poverty
+06M552,Gregorio Luperon High School for Science and Mathematics,Manhattan,New York City,480.0,8am,M876,77.0,6.8,7.4,92.0,49.0,148.0,98.7,77.9,1.7000000000000002,521.0,Screened,3.0,False,0.521,8.0,Early,Highest poverty
+11X542,Pelham Preparatory Academy,Bronx,New York City,495.0,8:15am,X415,84.3,7.9,8.6,90.0,68.0,140.0,73.1,6.1,24.5,511.0,Educational option,33.0,False,0.511,8.25,Late,Upper middle
+03M541,Manhattan / Hunter Science High School,Manhattan,New York City,480.0,8am,M490,99.0,9.0,0.0,97.0,88.0,100.0,52.5,0.0,13.8,441.0,Screened,53.0,False,0.441,8.0,Early,Lowest poverty
+05M499,Frederick Douglass Academy,Manhattan,New York City,480.0,8am,M010,74.4,12.2,10.1,89.0,59.0,238.0,80.10000000000001,5.6000000000000005,18.2,1257.0,Screened,7.0,False,1.257,8.0,Early,Upper middle
+14K477,East Williamsburg Scholars Academy,Brooklyn,New York City,531.0,8:51am,K450,73.8,0.0,7.1,77.0,30.0,84.0,88.1,32.9,21.4,304.0,Educational option,1.0,False,0.304,8.85,Late,Highest poverty
+22K425,James Madison High School,Brooklyn,New York City,440.0,7:20am,K425,77.2,25.3,7.2,94.0,64.0,878.0,64.0,13.7,15.6,3797.0,Screened,48.0,False,3.797,7.333333333333333,Early,Lower middle
+31R064,Gaynor McCown Expeditionary Learning School,Staten Island,New York City,495.0,8:15am,R043,93.3,10.1,2.2,91.0,79.0,89.0,37.6,0.7000000000000001,26.700000000000003,434.0,Educational option,5.0,False,0.434,8.25,Late,Lowest poverty
+32K545,EBC High School for Public Service-Bushwick,Brooklyn,New York City,480.0,8am,K913,81.1,0.0,10.2,87.0,40.0,127.0,90.2,19.6,22.8,479.0,Educational option,3.0,False,0.479,8.0,Early,Highest poverty
+02M399,The High School For Language and Diplomacy,Manhattan,New York City,500.0,8:20am,M460,75.0,6.0,6.0,82.0,72.0,84.0,82.69999999999999,10.9,17.5,302.0,Educational option,3.0,False,0.302,8.333333333333334,Late,Upper middle
+11X288,Collegiate Institute for Math and Science (CIMS),Bronx,New York City,500.0,8:20am,X415,87.8,39.1,5.8,90.0,81.0,156.0,71.3,3.3000000000000003,18.6,607.0,Educational option,21.0,False,0.607,8.333333333333334,Late,Upper middle
+12X511,Bronx Envision Academy,Bronx,New York City,500.0,8:20am,X098,70.1,8.4,10.3,81.0,50.0,107.0,89.2,16.7,23.9,418.0,Educational option,4.0,False,0.418,8.333333333333334,Late,Highest poverty
+01M696,Bard High School Early College,Manhattan,New York City,540.0,9am,M097,96.7,0.0,0.0,95.0,98.0,150.0,39.0,0.2,7.8,615.0,Screened,35.0,False,0.615,9.0,Late,Lowest poverty
+21K620,William E. Grady Career and Technical Education High School,Brooklyn,New York City,480.0,8am,K620,72.3,6.0,18.1,82.0,22.0,83.0,79.10000000000001,6.800000000000001,38.6,412.0,Educational option,3.0,False,0.412,8.0,Early,Upper middle
+02M534,Harvest Collegiate High School,Manhattan,New York City,500.0,8:20am,M883,84.9,0.0,3.8,85.0,79.0,106.0,61.6,2.4,25.2,457.0,Unscreened,24.0,False,0.457,8.333333333333334,Late,Lower middle
+17K531,The School for Human Rights,Brooklyn,New York City,480.0,8am,K470,74.0,1.9,7.7,92.0,49.0,104.0,73.9,8.0,18.8,352.0,Unscreened,3.0,False,0.352,8.0,Early,Upper middle
+02M605,Humanities Preparatory Academy,Manhattan,New York City,519.0,8:39am,M440,93.9,0.0,0.0,85.0,,66.0,73.4,3.3000000000000003,20.4,245.0,Screened,11.0,False,0.245,8.65,Late,Upper middle
+22K611,Origins High School,Brooklyn,New York City,500.0,8:20am,K495,71.4,0.0,5.0,83.0,,119.0,82.0,26.8,12.3,414.0,Educational option,2.0,False,0.414,8.333333333333334,Late,Upper middle
+02M392,Manhattan Business Academy,Manhattan,New York City,525.0,8:45am,M440,91.2,2.2,4.4,87.0,77.0,91.0,80.30000000000001,6.3,21.0,414.0,Educational option,14.0,False,0.414,8.75,Late,Upper middle
+10X546,Bronx Theatre High School,Bronx,New York City,520.0,8:40am,X475,79.7,5.1,8.9,78.0,46.0,79.0,90.5,5.800000000000001,23.6,347.0,Educational option,11.0,False,0.347,8.666666666666666,Late,Highest poverty
+03M859,Special Music School,Manhattan,New York City,480.0,8am,M932,92.9,0.0,2.4,95.0,,42.0,30.4,0.3,12.4,314.0,Audition,9.0,False,0.314,8.0,Early,Lowest poverty
+18K567,Brooklyn Theatre Arts High School,Brooklyn,New York City,510.0,8:30am,K515,71.4,0.0,1.3,82.0,46.0,77.0,77.9,2.3,17.1,350.0,Educational option,4.0,False,0.35,8.5,Late,Upper middle
+12X478,The Cinema School,Bronx,New York City,505.0,8:25am,X423,89.6,4.5,0.0,89.0,60.0,67.0,83.89999999999999,4.7,19.9,317.0,Screened,14.0,False,0.317,8.416666666666666,Late,Upper middle
+13K595,Bedford Academy High School,Brooklyn,New York City,480.0,8am,K994,98.6,16.7,0.0,93.0,88.0,72.0,60.8,1.1,14.9,363.0,Screened,56.0,False,0.363,8.0,Early,Lower middle
+02M418,Millennium High School,Manhattan,New York City,510.0,8:30am,M824,97.9,76.6,0.0,96.0,91.0,141.0,46.8,0.7000000000000001,12.3,681.0,Screened,36.0,False,0.681,8.5,Late,Lowest poverty
+10X243,West Bronx Academy for the Future,Bronx,New York City,510.0,8:30am,X435,80.0,11.4,4.3,84.0,54.0,70.0,91.7,12.2,26.3,609.0,Other,,False,0.609,8.5,Late,Highest poverty
+08X293,Renaissance High School for Musical Theater and the Arts,Bronx,New York City,495.0,8:15am,X405,84.0,2.5,9.2,82.0,43.0,119.0,76.8,5.9,23.3,460.0,Educational option,6.0,False,0.46,8.25,Late,Upper middle
+12X267,Bronx Latin,Bronx,New York City,495.0,8:15am,X158,90.1,19.8,2.2,90.0,82.0,91.0,89.0,14.3,24.8,580.0,Educational option,27.0,False,0.58,8.25,Late,Highest poverty
+03M860,Frederick Douglass Academy II Secondary School,Manhattan,New York City,480.0,8am,M088,68.4,0.0,9.2,82.0,39.0,76.0,87.8,10.2,25.4,362.0,Educational option,4.0,False,0.362,8.0,Early,Highest poverty
+04M435,Manhattan Center for Science and Mathematics,Manhattan,New York City,500.0,8:20am,M435,95.2,59.3,0.5,93.0,80.0,378.0,75.1,6.800000000000001,14.2,1650.0,Screened,14.0,False,1.65,8.333333333333334,Late,Upper middle
+17K600,Clara Barton High School,Brooklyn,New York City,480.0,8am,K600,73.3,4.3,3.9,89.0,52.0,258.0,70.39999999999999,7.8,18.1,1200.0,Educational option,3.0,False,1.2,8.0,Early,Upper middle
+11X270,Academy for Scholarship and Entrepreneurship: A College Board School,Bronx,New York City,475.0,7:55am,X362,68.6,0.0,17.1,81.0,40.0,105.0,76.4,5.2,22.6,368.0,Educational option,5.0,False,0.368,7.916666666666667,Early,Upper middle
+18K563,It Takes a Village Academy,Brooklyn,New York City,495.0,8:15am,K415,83.5,1.9,5.1,91.0,76.0,158.0,75.9,17.599999999999998,14.9,659.0,Educational option,4.0,False,0.659,8.25,Late,Upper middle
+05M369,Urban Assembly School for the Performing Arts,Manhattan,New York City,495.0,8:15am,M043,75.3,0.0,17.8,81.0,68.0,73.0,87.0,7.5,24.0,387.0,Educational option,7.0,False,0.387,8.25,Late,Highest poverty
+03M479,Beacon High School,Manhattan,New York City,480.0,8am,M912,98.0,0.0,0.3,96.0,87.0,306.0,29.8,0.1,11.8,1423.0,Screened,21.0,False,1.423,8.0,Early,Lowest poverty
+03M307,The Urban Assembly School for Media Studies,Manhattan,New York City,540.0,9am,M490,81.5,0.0,9.3,84.0,54.0,108.0,83.39999999999999,5.4,15.5,407.0,Educational option,4.0,False,0.407,9.0,Late,Upper middle
+28Q284,York Early College Academy,Queens,New York City,480.0,8am,Q008,96.6,39.8,0.0,95.0,94.0,88.0,47.9,0.8,10.9,658.0,Screened,18.0,False,0.658,8.0,Early,Lowest poverty
+10X264,Bronx Academy for Software Engineering (BASE),Bronx,New York City,495.0,8:15am,X660,55.0,0.0,9.0,88.0,,100.0,80.0,9.1,28.2,419.0,Educational option,15.0,False,0.419,8.25,Late,Upper middle
+25Q252,"Queens School of Inquiry, The",Queens,New York City,480.0,8am,Q168,96.2,32.1,2.6,93.0,97.0,78.0,53.8,4.3,16.0,588.0,Screened,16.0,False,0.588,8.0,Early,Lowest poverty
+25Q241,Queens High School for Language Studies,Queens,New York City,480.0,8am,Q460,91.3,53.4,1.0,95.0,,103.0,76.1,22.6,5.9,424.0,Screened,3.0,False,0.424,8.0,Early,Upper middle
+02M408,Professional Performing Arts High School (PPAS),Manhattan,New York City,495.0,8:15am,M017,98.0,29.3,1.0,93.0,74.0,99.0,36.2,0.2,14.2,558.0,Audition,19.0,False,0.558,8.25,Late,Lowest poverty
+28Q328,High School for Community Leadership,Queens,New York City,540.0,9am,Q470,91.4,19.8,0.9,87.0,56.00000000000001,116.0,68.4,14.9,15.3,464.0,Educational option,5.0,False,0.464,9.0,Late,Lower middle
+13K605,George Westinghouse Career and Technical Education High School,Brooklyn,New York City,500.0,8:20am,K580,90.3,6.3,2.1,88.0,39.0,144.0,74.1,2.3,17.9,776.0,Screened,12.0,False,0.776,8.333333333333334,Late,Upper middle
+11X275,High School of Computers and Technology,Bronx,New York City,480.0,8am,X425,77.8,10.2,5.6,87.0,62.0,108.0,83.2,8.1,25.1,542.0,Educational option,11.0,False,0.542,8.0,Early,Upper middle
+30Q450,Long Island City High School,Queens,New York City,490.0,8:10am,Q452,74.3,11.8,7.8,86.0,45.0,549.0,78.60000000000001,11.4,16.5,2252.0,Educational option,4.0,False,2.252,8.166666666666666,Early,Upper middle
+02M298,Pace High School,Manhattan,New York City,540.0,9am,M131,78.5,7.4,6.7,87.0,77.0,135.0,73.6,3.0,18.4,572.0,Educational option,23.0,False,0.572,9.0,Late,Upper middle
+19K764,The Urban Assembly School for Collaborative Healthcare,Brooklyn,New York City,532.0,8:52am,K420,82.2,0.0,9.6,87.0,,73.0,80.0,18.6,10.9,338.0,Educational option,3.0,False,0.338,8.866666666666667,Late,Upper middle
+02M580,Richard R. Green High School of Teaching,Manhattan,New York City,500.0,8:20am,M282,80.9,3.5,6.1,87.0,53.0,115.0,76.3,4.2,19.1,429.0,Educational option,2.0,False,0.429,8.333333333333334,Late,Upper middle
+12X388,Pan American International High School at Monroe,Bronx,New York City,510.0,8:30am,X420,78.6,0.0,8.5,88.0,59.0,117.0,99.1,87.8,3.2,444.0,Screened,4.0,False,0.444,8.5,Late,Highest poverty
+08X452,Gotham Collaborative High School,Bronx,New York City,480.0,8am,X450,47.1,0.0,17.2,80.0,36.0,157.0,90.5,15.4,26.700000000000003,532.0,Educational option,3.0,False,0.532,8.0,Early,Highest poverty
+01M539,"New Explorations into Science, Technology and Math High School (NEST+m)",Manhattan,New York City,500.0,8:20am,M022,100.0,80.0,0.0,95.0,85.0,140.0,25.9,1.6,9.2,1754.0,Screened,41.0,False,1.754,8.333333333333334,Late,Lowest poverty
+02M427,Manhattan Academy for Arts & Language,Manhattan,New York City,529.0,8:49am,M620,64.9,6.8,12.2,86.0,43.0,74.0,95.6,67.4,12.0,233.0,Screened,2.0,False,0.233,8.816666666666666,Late,Highest poverty
+28Q690,High School for Law Enforcement and Public Safety,Queens,New York City,480.0,8am,Q690,75.2,4.6,6.4,89.0,63.0,109.0,68.30000000000001,6.9,20.8,462.0,Screened,4.0,False,0.462,8.0,Early,Lower middle
+23K647,Metropolitan Diploma Plus High School,Brooklyn,New York City,516.0,8:36am,K275,11.2,0.0,30.3,66.0,,89.0,86.6,3.1,37.0,227.0,Other,1.0,False,0.227,8.6,Late,Highest poverty
+02M376,NYC iSchool,Manhattan,New York City,540.0,9am,M615,98.2,0.0,0.0,93.0,91.0,109.0,34.4,1.1,16.1,466.0,Screened,39.0,False,0.466,9.0,Late,Lowest poverty
+09X568,Young Women's Leadership School of the Bronx (TYWLS),Bronx,New York City,520.0,8:40am,X117,89.1,21.9,3.1,92.0,,64.0,81.3,4.9,18.3,536.0,Screened,7.0,False,0.536,8.666666666666666,Late,Upper middle
+17K122,Pathways in Technology Early College High School (P-TECH),Brooklyn,New York City,495.0,8:15am,K625,69.8,0.0,2.6,93.0,68.0,116.0,65.0,2.2,18.2,581.0,Educational option,10.0,False,0.581,8.25,Late,Lower middle
+22K405,Midwood High School,Brooklyn,New York City,525.0,8:45am,K405,91.4,60.4,1.9,92.0,81.0,1000.0,63.2,2.7,11.8,4156.0,Unscreened,2.0,False,4.156,8.75,Late,Lower middle
+10X524,Crotona International High School,Bronx,New York City,510.0,8:30am,X660,71.8,0.0,14.1,83.0,15.0,85.0,99.0,95.8,3.3000000000000003,333.0,Screened,2.0,False,0.333,8.5,Late,Highest poverty
+08X320,Pelham Lab High School,Bronx,New York City,480.0,8am,X405,63.9,4.6,18.5,83.0,,108.0,80.0,15.6,22.1,475.0,Educational option,8.0,False,0.475,8.0,Early,Upper middle
+07X223,The Laboratory School of Finance and Technology,Bronx,New York City,470.0,7:50am,X149,84.7,0.0,3.5,90.0,,85.0,90.7,7.6,19.9,662.0,Screened,11.0,False,0.662,7.833333333333333,Early,Highest poverty
+02M414,N.Y.C. Museum School,Manhattan,New York City,495.0,8:15am,M070,97.9,65.3,0.0,94.0,90.0,95.0,54.7,0.8999999999999999,20.3,449.0,Screened,30.0,False,0.449,8.25,Late,Lowest poverty
+29Q327,Eagle Academy for Young Men III,Queens,New York City,525.0,8:45am,Q633,87.9,1.7,1.7,91.0,,58.0,55.50000000000001,0.4,25.2,497.0,Educational option,2.0,False,0.497,8.75,Late,Lower middle
+24Q610,Aviation Career & Technical Education High School,Queens,New York City,480.0,8am or 8:45am,Q610,95.2,54.4,0.2,97.0,68.0,463.0,65.2,2.9000000000000004,14.000000000000002,2088.0,Screened,11.0,False,2.088,8.0,Early,Lower middle
+02M500,Unity Center for Urban Technologies,Manhattan,New York City,495.0,8:15am,M620,84.1,0.0,3.2,84.0,64.0,63.0,86.1,6.800000000000001,24.1,278.0,Educational option,6.0,False,0.278,8.25,Late,Highest poverty
+19K618,Academy of Innovative Technology,Brooklyn,New York City,497.0,8:17am,K420,92.2,7.8,3.3,88.0,48.0,90.0,76.0,11.6,20.6,422.0,Educational option,6.0,False,0.422,8.283333333333333,Late,Upper middle
+02M419,Landmark High School,Manhattan,New York City,525.0,8:45am,M440,72.4,0.0,15.3,81.0,36.0,98.0,81.3,5.5,22.1,330.0,Educational option,3.0,False,0.33,8.75,Late,Upper middle
+20K609,Urban Assembly School for Criminal Justice,Brooklyn,New York City,525.0,8:45am,K223,92.5,52.2,1.5,90.0,81.0,67.0,85.8,13.3,14.4,549.0,Educational option,6.0,False,0.549,8.75,Late,Highest poverty
+13K670,Benjamin Banneker Academy,Brooklyn,New York City,495.0,8:15am,K914,95.8,27.4,0.5,88.0,80.0,190.0,66.0,1.5,14.8,810.0,Screened,27.0,False,0.81,8.25,Late,Lower middle
+09X231,Eagle Academy for Young Men,Bronx,New York City,480.0,8am,X465,68.2,0.0,13.6,87.0,64.0,66.0,80.9,4.2,26.6,527.0,Other,,False,0.527,8.0,Early,Upper middle
+28Q325,Hillside Arts & Letters Academy,Queens,New York City,491.0,8:11am,Q470,89.2,7.2,0.9,85.0,53.0,111.0,69.69999999999999,14.099999999999998,19.0,447.0,Educational option,7.0,False,0.447,8.183333333333334,Early,Lower middle
+10X438,Fordham Leadership Academy,Bronx,New York City,450.0,7:30am,X435,89.1,7.8,6.3,90.0,32.0,64.0,89.3,19.9,24.1,352.0,Educational option,9.0,False,0.352,7.5,Early,Highest poverty
+11X265,Bronx Lab School,Bronx,New York City,510.0,8:30am,X425,62.4,0.0,9.9,81.0,41.0,101.0,88.5,15.4,30.2,371.0,Educational option,4.0,False,0.371,8.5,Late,Highest poverty
+19K659,Cypress Hills Collegiate Preparatory School,Brooklyn,New York City,480.0,8am,K420,83.3,6.3,8.3,89.0,51.0,48.0,82.69999999999999,21.5,19.5,302.0,Educational option,3.0,False,0.302,8.0,Early,Upper middle
+15K464,Park Slope Collegiate,Brooklyn,New York City,505.0,8:25am,K460,83.7,2.0,4.1,87.0,66.0,98.0,62.7,7.1,22.5,690.0,Educational option,8.0,False,0.69,8.416666666666666,Late,Lower middle
+28Q896,"Young Women's Leadership School, Queens (TYWLS)",Queens,New York City,480.0,8am,Q680,97.4,34.2,0.0,94.0,84.0,76.0,58.4,1.6,15.4,547.0,Screened,8.0,False,0.547,8.0,Early,Lower middle
+14K488,Brooklyn Preparatory High School,Brooklyn,New York City,500.0,8:20am,K650,92.0,0.0,0.7,86.0,69.0,138.0,75.5,2.1,18.8,527.0,Educational option,11.0,False,0.527,8.333333333333334,Late,Upper middle
+14K558,Williamsburg High School for Architecture and Design,Brooklyn,New York City,500.0,8:20am,K650,96.8,9.7,0.8,91.0,56.00000000000001,124.0,70.89999999999999,3.1,22.4,580.0,Unscreened,10.0,False,0.58,8.333333333333334,Late,Upper middle
+08X559,School for Tourism and Hospitality,Bronx,New York City,510.0,8:30am,X650,36.2,0.0,26.7,77.0,42.0,105.0,93.6,24.7,29.8,299.0,Educational option,2.0,False,0.299,8.5,Late,Highest poverty
+17K537,High School for Youth and Community Development at Erasmus,Brooklyn,New York City,480.0,8am,K465,80.6,3.1,10.2,88.0,39.0,98.0,77.4,8.799999999999999,24.8,467.0,Unscreened,6.0,False,0.467,8.0,Early,Upper middle
+26Q415,Benjamin N. Cardozo High School,Queens,New York City,480.0,8am,Q415,87.7,38.9,4.2,92.0,77.0,942.0,49.3,4.6,13.4,3609.0,Educational option,29.0,False,3.609,8.0,Early,Lowest poverty
+19K409,East New York Family Academy,Brooklyn,New York City,475.0,7:55am,K819,93.2,1.7,0.0,88.0,68.0,59.0,80.10000000000001,3.0,22.0,496.0,Screened,8.0,False,0.496,7.916666666666667,Early,Upper middle
+04M610,Young Women's Leadership School (TYWLS),Manhattan,New York City,520.0,8:40am,M895,98.6,42.5,1.4,94.0,97.0,73.0,77.60000000000001,2.3,18.3,480.0,Screened,16.0,False,0.48,8.666666666666666,Late,Upper middle
+10X225,Theater Arts Production Company School (TAPCo),Bronx,New York City,500.0,8:20am,X137,79.3,2.4,4.9,85.0,65.0,82.0,87.3,7.6,23.5,540.0,Audition,3.0,False,0.54,8.333333333333334,Late,Highest poverty
+12X682,Fannie Lou Hamer Freedom High School,Bronx,New York City,525.0,8:45am,X878,70.5,0.0,13.1,80.0,37.0,122.0,89.5,12.7,30.1,471.0,Educational option,5.0,False,0.471,8.75,Late,Highest poverty
+24Q264,Academy of Finance and Enterprise,Queens,New York City,500.0,8:20am,Q735,94.6,54.7,1.4,93.0,77.0,148.0,67.9,5.7,12.8,649.0,Educational option,16.0,False,0.649,8.333333333333334,Late,Lower middle
+13K483,The Urban Assembly School for Law and Justice,Brooklyn,New York City,520.0,8:40am,K313,95.8,0.0,2.1,91.0,76.0,96.0,68.0,2.1,17.2,435.0,Educational option,15.0,False,0.435,8.666666666666666,Late,Lower middle
+29Q498,Humanities & Arts Magnet High School,Queens,New York City,480.0,8am,Q490,81.0,0.8,7.4,86.0,45.0,121.0,66.3,11.4,16.6,439.0,Educational option,3.0,False,0.439,8.0,Early,Lower middle
+09X413,Bronx High School for Medical Science,Bronx,New York City,500.0,8:20am,X410,85.1,0.0,6.0,93.0,83.0,67.0,88.6,13.8,20.5,419.0,Screened,26.0,False,0.419,8.333333333333334,Late,Highest poverty
+03M402,The Urban Assembly School for Green Careers,Manhattan,New York City,520.0,8:40am,M470,73.5,3.6,12.0,84.0,43.0,83.0,83.0,15.1,23.0,304.0,Unscreened,2.0,False,0.304,8.666666666666666,Late,Upper middle
+27Q480,John Adams High School,Queens,New York City,495.0,8:15am,Q480,79.3,7.7,12.8,86.0,45.0,555.0,74.0,13.900000000000002,14.000000000000002,2366.0,Screened,2.0,False,2.366,8.25,Late,Upper middle
+02M489,High School of Economics and Finance,Manhattan,New York City,525.0,8:45am,M833,89.5,7.4,1.2,88.0,82.0,162.0,76.4,5.9,18.9,741.0,Educational option,7.0,False,0.741,8.75,Late,Upper middle
+02M300,The Urban Assembly School of Design and Construction,Manhattan,New York City,480.0,8am,M535,69.0,4.8,15.5,83.0,47.0,84.0,85.7,11.6,25.8,302.0,Educational option,3.0,False,0.302,8.0,Early,Highest poverty
+30Q258,Energy Tech High School,Queens,New York City,525.0,8:45am,Q204,88.1,18.3,2.8,94.0,,109.0,61.9,2.6,18.0,533.0,Educational option,14.0,False,0.533,8.75,Late,Lower middle
+11X509,High School of Language and Innovation,Bronx,New York City,500.0,8:20am,X415,75.0,22.9,11.5,87.0,51.0,96.0,97.6,80.2,4.2,379.0,Screened,3.0,False,0.379,8.333333333333334,Late,Highest poverty
+07X221,South Bronx Preparatory: A College Board School,Bronx,New York City,480.0,8am,X149,88.8,10.1,1.1,92.0,57.99999999999999,89.0,92.8,7.000000000000001,26.200000000000003,657.0,Other,,False,0.657,8.0,Early,Highest poverty
+22K555,Brooklyn College Academy,Brooklyn,New York City,485.0,8:05am,K917,99.4,49.0,0.0,95.0,95.0,155.0,55.400000000000006,0.6,14.099999999999998,660.0,Screened,18.0,False,0.66,8.083333333333334,Early,Lower middle
+21K344,Rachel Carson High School for Coastal Studies,Brooklyn,New York City,525.0,8:45am,K303,73.1,7.1,9.0,86.0,54.0,156.0,76.4,18.6,17.8,623.0,Educational option,3.0,False,0.623,8.75,Late,Upper middle
+04M680,"Heritage School, The",Manhattan,New York City,510.0,8:30am,M107,90.1,2.8,4.2,88.0,41.0,71.0,87.7,7.000000000000001,22.0,313.0,Educational option,6.0,False,0.313,8.5,Late,Highest poverty
+02M600,The High School of Fashion Industries,Manhattan,New York City,490.0,8:10am,M600,84.8,27.8,3.9,91.0,79.0,356.0,75.2,3.2,16.8,1577.0,Audition,3.0,False,1.577,8.166666666666666,Early,Upper middle
+24Q530,International High School at LaGuardia Community College,Queens,New York City,480.0,8am,Q520,78.1,0.0,4.4,92.0,80.0,114.0,86.2,65.10000000000001,1.7999999999999998,507.0,Screened,6.0,False,0.507,8.0,Early,Highest poverty
+02M519,Talent Unlimited High School,Manhattan,New York City,485.0,8:05am,M480,93.0,25.0,2.0,93.0,75.0,100.0,52.900000000000006,1.0,15.4,518.0,Audition,10.0,False,0.518,8.083333333333334,Early,Lowest poverty
+02M507,Urban Assembly Gateway School for Technology,Manhattan,New York City,495.0,8:15am,M625,93.7,33.3,0.9,89.0,72.0,111.0,66.0,3.5000000000000004,21.7,456.0,Educational option,18.0,False,0.456,8.25,Late,Lower middle
+10X141,Riverdale / Kingsbridge Academy (Middle School / High School 141) (RKA),Bronx,New York City,500.0,8:20am,X141,88.8,33.5,3.1,92.0,71.0,161.0,46.9,7.000000000000001,18.7,1513.0,Screened,10.0,False,1.513,8.333333333333334,Late,Lowest poverty
+02M400,High School for Environmental Studies,Manhattan,New York City,450.0,7:30am,M834,73.2,12.8,6.8,85.0,67.0,250.0,78.0,8.7,18.9,1146.0,Educational option,8.0,False,1.146,7.5,Early,Upper middle
+08X348,Schuylerville Preparatory High School,Bronx,New York City,495.0,8:15am,X405,64.3,0.0,11.2,87.0,,98.0,76.2,14.4,22.5,360.0,Educational option,4.0,False,0.36,8.25,Late,Upper middle
+31R047,CSI High School for International Studies,Staten Island,New York City,450.0,7:30am,R043,100.0,41.0,0.0,95.0,92.0,105.0,36.3,0.0,14.9,496.0,Unscreened,11.0,False,0.496,7.5,Early,Lowest poverty
+14K586,Lyons Community School,Brooklyn,New York City,520.0,8:40am,K049,72.4,0.0,5.3,81.0,40.0,76.0,89.9,11.0,25.3,471.0,Educational option,3.0,False,0.471,8.666666666666666,Late,Highest poverty
+13K430,Brooklyn Technical High School,Brooklyn,New York City,525.0,8:45am,K430,94.6,87.3,0.4,96.0,95.0,1417.0,50.8,0.0,1.2,5937.0,Specialized or test,,False,5.937,8.75,Late,Lowest poverty
+09X297,Morris Academy for Collaborative Studies,Bronx,New York City,526.0,8:46am,X400,72.1,5.8,9.3,84.0,46.0,86.0,90.0,17.1,27.1,409.0,Educational option,4.0,False,0.409,8.766666666666667,Late,Highest poverty
+17K745,Brooklyn Institute for Liberal Arts (BILA),Brooklyn,New York City,480.0,8am,K470,92.9,0.0,2.4,93.0,64.0,84.0,69.6,4.6,19.3,415.0,Unscreened,6.0,False,0.415,8.0,Early,Lower middle
+24Q485,Grover Cleveland High School,Queens,New York City,510.0,8:30am,Q485,58.0,9.3,10.9,83.0,43.0,450.0,74.2,17.4,19.2,1715.0,Educational option,4.0,False,1.715,8.5,Late,Upper middle
+20K505,Franklin Delano Roosevelt High School,Brooklyn,New York City,530.0,8:50am,K505,61.9,11.1,12.3,89.0,51.0,826.0,86.2,33.1,14.3,3214.0,Educational option,9.0,False,3.214,8.833333333333334,Late,Highest poverty
+29Q248,Queens Preparatory Academy,Queens,New York City,490.0,8:10am,Q420,76.5,0.0,9.2,83.0,52.0,98.0,64.9,11.6,13.7,387.0,Educational option,3.0,False,0.387,8.166666666666666,Early,Lower middle
+07X551,The Urban Assembly Bronx Academy of Letters,Bronx,New York City,480.0,8am,X183,82.5,0.0,1.3,80.0,43.0,80.0,94.1,13.6,28.8,587.0,Unscreened,4.0,False,0.587,8.0,Early,Highest poverty
+14K610,Automotive High School,Brooklyn,New York City,480.0,8am,K610,70.9,0.0,11.4,81.0,18.0,79.0,80.10000000000001,6.4,33.7,329.0,Educational option,4.0,False,0.329,8.0,Early,Upper middle
+08X405,Herbert H. Lehman High School,Bronx,New York City,495.0,8:15am,X405,62.1,6.0,20.3,83.0,35.0,182.0,77.4,12.8,24.6,794.0,Educational option,8.0,False,0.794,8.25,Late,Upper middle
+19K422,Spring Creek Community School,Brooklyn,New York City,540.0,9am,K422,90.8,0.0,3.1,92.0,,65.0,79.5,3.4000000000000004,24.6,528.0,Educational option,8.0,False,0.528,9.0,Late,Upper middle
+30Q575,Academy of American Studies,Queens,New York City,590.0,9:50am,Q451,95.8,54.6,0.9,94.0,72.0,216.0,52.900000000000006,2.6,7.7,1007.0,Educational option,37.0,False,1.007,9.833333333333334,Late,Lowest poverty
+27Q309,Academy of Medical Technology: A College Board School,Queens,New York City,450.0,7:30am,Q465,62.8,1.8,15.9,86.0,32.0,113.0,82.89999999999999,16.0,15.5,626.0,Educational option,6.0,False,0.626,7.5,Early,Upper middle
+10X440,DeWitt Clinton High School,Bronx,New York City,495.0,8:15am,X440,74.9,7.2,12.4,84.0,34.0,307.0,83.1,14.8,18.9,1119.0,Educational option,5.0,False,1.119,8.25,Late,Upper middle
+27Q334,Epic High School - North,Queens,New York City,540.0,9am,Q636,75.3,0.0,7.9,89.0,,89.0,68.0,9.7,15.1,411.0,Unscreened,7.0,False,0.411,9.0,Late,Lower middle
+01M450,East Side Community School,Manhattan,New York City,510.0,8:30am,M060,88.2,0.0,1.1,94.0,77.0,93.0,64.1,1.3,27.1,680.0,Screened,18.0,False,0.68,8.5,Late,Lower middle
+13K527,Urban Assembly Institute of Math and Science for Young Women,Brooklyn,New York City,510.0,8:30am,K313,80.0,5.7,1.4,87.0,62.0,70.0,80.4,6.800000000000001,16.8,500.0,Educational option,4.0,False,0.5,8.5,Late,Upper middle
+02M316,The Urban Assembly School of Business for Young Women,Manhattan,New York City,500.0,8:20am,M282,66.0,0.0,10.6,83.0,49.0,47.0,81.89999999999999,7.3,16.8,179.0,Educational option,2.0,False,0.179,8.333333333333334,Late,Upper middle
+10X442,"Celia Cruz Bronx High School of Music, The",Bronx,New York City,480.0,8am,X430,87.5,22.9,1.0,91.0,70.0,96.0,77.8,5.7,22.8,421.0,Audition,7.0,False,0.421,8.0,Early,Upper middle
+24Q296,Pan American International High School,Queens,New York City,500.0,8:20am,Q744,76.7,0.0,10.3,92.0,35.0,146.0,96.3,84.2,2.8000000000000003,423.0,Screened,2.0,False,0.423,8.333333333333334,Late,Highest poverty
+02M296,High School of Hospitality Management,Manhattan,New York City,540.0,9am,M535,69.7,0.0,7.1,82.0,54.0,99.0,86.0,9.2,25.8,380.0,Educational option,5.0,False,0.38,9.0,Late,Highest poverty
+09X517,Frederick Douglass Academy III Secondary School,Bronx,New York City,510.0,8:30am,X148,58.5,4.7,20.8,76.0,34.0,106.0,91.7,20.3,25.7,408.0,Educational option,4.0,False,0.408,8.5,Late,Highest poverty
+03M494,High School of Arts and Technology,Manhattan,New York City,483.0,8:03am,M490,63.8,4.3,15.5,82.0,34.0,116.0,84.39999999999999,8.7,25.2,492.0,Educational option,15.0,False,0.492,8.05,Early,Upper middle
+30Q555,Newcomers High School,Queens,New York City,480.0,8am,Q450,63.9,19.1,15.3,89.0,55.00000000000001,288.0,99.0,78.3,0.7000000000000001,828.0,Screened,3.0,False,0.828,8.0,Early,Highest poverty
+11X418,Bronx High School for the Visual Arts,Bronx,New York City,495.0,8:15am,X839,68.1,3.4,16.4,84.0,38.0,116.0,78.4,6.1,29.7,461.0,Educational option,17.0,False,0.461,8.25,Late,Upper middle
+29Q283,Preparatory Academy for Writers: A College Board School,Queens,New York City,480.0,8am,Q420,85.6,13.4,4.1,85.0,59.0,97.0,51.2,2.9000000000000004,16.3,578.0,Educational option,3.0,False,0.578,8.0,Early,Lowest poverty
+13K412,Brooklyn Community Arts & Media High School (BCAM),Brooklyn,New York City,500.0,8:20am,K117,74.7,0.0,10.3,82.0,53.0,87.0,80.30000000000001,3.6,26.4,421.0,Educational option,4.0,False,0.421,8.333333333333334,Late,Upper middle
+32K554,All City Leadership Secondary School,Brooklyn,New York City,465.0,7:45am,K554,94.9,59.3,1.7,93.0,73.0,59.0,68.10000000000001,2.6,11.6,430.0,Educational option,23.0,False,0.43,7.75,Early,Lower middle
+07X670,Health Opportunities High School,Bronx,New York City,500.0,8:20am,X884,57.7,0.6,28.2,77.0,53.0,163.0,91.2,13.7,22.3,497.0,Educational option,4.0,False,0.497,8.333333333333334,Late,Highest poverty
+02M374,Gramercy Arts High School,Manhattan,New York City,500.0,8:20am,M460,85.3,4.6,2.8,84.0,56.99999999999999,109.0,74.4,2.1,16.900000000000002,468.0,Audition,8.0,False,0.468,8.333333333333334,Late,Upper middle
+15K656,Brooklyn High School of the Arts,Brooklyn,New York City,510.0,8:30am,K655,83.8,8.6,1.5,92.0,64.0,197.0,64.9,1.1,17.5,939.0,Audition,9.0,False,0.939,8.5,Late,Lower middle
+24Q550,High School for Arts and Business,Queens,New York City,525.0,8:45am,Q456,96.2,55.1,1.1,92.0,68.0,185.0,72.6,9.9,16.2,784.0,Educational option,13.0,False,0.784,8.75,Late,Upper middle
+23K697,Teachers Preparatory High School,Brooklyn,New York City,500.0,8:20am,K175,70.3,3.1,14.1,80.0,49.0,64.0,89.0,9.3,39.5,205.0,Educational option,2.0,False,0.205,8.333333333333334,Late,Highest poverty
+13K674,"City Polytechnic High School of Engineering, Architecture, and Technology",Brooklyn,New York City,510.0,8:30am,K580,81.9,0.0,4.8,89.0,77.0,83.0,63.0,1.6,19.2,426.0,Educational option,17.0,False,0.426,8.5,Late,Lower middle
+02M432,Murray Hill Academy,Manhattan,New York City,480.0,8am,M620,65.7,2.9,11.4,79.0,,70.0,81.0,3.9,24.7,304.0,Educational option,4.0,False,0.304,8.0,Early,Upper middle
+02M542,Manhattan Bridges High School,Manhattan,New York City,525.0,8:45am,M535,90.6,57.5,3.8,92.0,78.0,106.0,91.7,46.400000000000006,7.3,532.0,Screened,10.0,False,0.532,8.75,Late,Highest poverty
+02M288,Food and Finance High School,Manhattan,New York City,510.0,8:30am,M535,82.9,2.4,6.1,90.0,67.0,82.0,77.3,3.2,20.0,375.0,Educational option,15.0,False,0.375,8.5,Late,Upper middle
+18K642,Urban Action Academy,Brooklyn,New York City,490.0,8:10am,K500,61.0,1.2,15.9,81.0,33.0,82.0,78.2,23.1,15.9,264.0,Educational option,1.0,False,0.264,8.166666666666666,Early,Upper middle
+03M492,"High School for Law, Advocacy and Community Justice",Manhattan,New York City,480.0,8am,M490,72.5,13.8,14.7,84.0,63.0,109.0,83.2,6.5,16.8,429.0,Educational option,9.0,False,0.429,8.0,Early,Upper middle
+08X376,Antonia Pantoja Preparatory Academy: A College Board School,Bronx,New York City,495.0,8:15am,X450,65.6,6.6,11.5,80.0,39.0,61.0,88.3,14.3,28.5,446.0,Unscreened,2.0,False,0.446,8.25,Late,Highest poverty
+02M139,Stephen T. Mather Building Arts & Craftsmanship High School,Manhattan,New York City,535.0,8:55am,M625,87.5,5.0,7.5,87.0,,80.0,81.6,7.199999999999999,25.2,401.0,Educational option,5.0,False,0.401,8.916666666666666,Late,Upper middle
+09X329,DreamYard Preparatory School,Bronx,New York City,510.0,8:30am,X410,68.8,3.1,21.9,84.0,33.0,64.0,94.0,22.5,24.4,271.0,Educational option,5.0,False,0.271,8.5,Late,Highest poverty
+24Q600,Queens Technical High School,Queens,New York City,510.0,8:30am,Q600,77.4,14.5,3.9,90.0,62.0,359.0,74.6,7.3,17.9,1522.0,Audition,12.0,False,1.522,8.5,Late,Upper middle
+02M543,New Design High School,Manhattan,New York City,540.0,9am,M445,76.5,0.0,7.1,86.0,57.99999999999999,85.0,83.7,5.4,25.8,426.0,Educational option,8.0,False,0.426,9.0,Late,Upper middle
+18K569,Kurt Hahn Expeditionary Learning School,Brooklyn,New York City,510.0,8:30am,K415,69.7,0.0,3.4,89.0,43.0,89.0,74.1,7.1,28.2,294.0,Educational option,2.0,False,0.294,8.5,Late,Upper middle
+02M475,Stuyvesant High School,Manhattan,New York City,480.0,8am,M477,97.1,93.7,0.2,97.0,98.0,821.0,38.8,0.0,0.5,3316.0,Specialized or test,,False,3.316,8.0,Early,Lowest poverty
+31R455,Tottenville High School,Staten Island,New York City,480.0,8am,R455,90.9,33.6,3.0,91.0,62.0,929.0,31.1,1.6,20.8,3654.0,Educational option,7.0,False,3.654,8.0,Early,Lowest poverty
+08X530,Longwood Preparatory Academy,Bronx,New York City,500.0,8:20am,X039,53.9,0.0,17.1,80.0,29.0,76.0,91.2,17.5,28.1,342.0,Educational option,3.0,False,0.342,8.333333333333334,Late,Highest poverty
+11X544,High School for Contemporary Arts,Bronx,New York City,492.0,8:12am,X425,76.2,4.8,12.9,86.0,33.0,147.0,86.6,17.2,24.8,395.0,Educational option,5.0,False,0.395,8.2,Early,Highest poverty
+10X284,Bronx School of Law and Finance,Bronx,New York City,480.0,8am,X475,72.8,0.0,9.9,80.0,40.0,81.0,89.0,21.7,21.1,369.0,Educational option,5.0,False,0.369,8.0,Early,Highest poverty
+02M308,Lower Manhattan Arts Academy,Manhattan,New York City,510.0,8:30am,M445,71.2,0.0,12.1,88.0,57.99999999999999,66.0,81.2,6.9,36.6,290.0,Educational option,11.0,False,0.29,8.5,Late,Upper middle
+13K499,ACORN Community High School,Brooklyn,New York City,495.0,8:15am,K909,70.5,0.0,6.8,80.0,54.0,44.0,83.3,4.7,26.0,150.0,Educational option,2.0,False,0.15,8.25,Late,Upper middle
+11X299,Astor Collegiate Academy,Bronx,New York City,450.0,7:30am,X415,71.6,0.0,3.7,86.0,60.0,109.0,73.5,7.6,23.0,500.0,Educational option,8.0,False,0.5,7.5,Early,Upper middle
+27Q314,Epic High School - South,Queens,New York City,580.0,9:40am,Q226,76.1,0.0,5.7,84.0,,88.0,64.60000000000001,8.9,19.4,382.0,Educational option,4.0,False,0.382,9.666666666666666,Late,Lower middle
+12X479,Bronx Career and College Preparatory High School,Bronx,New York City,480.0,8am,X158,47.0,1.2,20.5,76.0,29.0,83.0,92.3,23.9,28.4,268.0,Educational option,4.0,False,0.268,8.0,Early,Highest poverty
+26Q435,Martin Van Buren High School,Queens,New York City,480.0,8am,Q435,75.4,9.5,7.7,87.0,43.0,284.0,66.10000000000001,13.0,11.4,1162.0,Screened,6.0,False,1.162,8.0,Early,Lower middle
+02M260,The Clinton School,Manhattan,New York City,545.0,9:05am,M868,90.7,0.0,1.2,97.0,,86.0,20.0,0.3,16.7,726.0,Screened,23.0,False,0.726,9.083333333333334,Late,Lowest poverty
+02M449,Vanguard High School,Manhattan,New York City,520.0,8:40am,M480,76.8,0.0,8.1,87.0,51.0,99.0,75.6,3.0,24.8,427.0,Educational option,9.0,False,0.427,8.666666666666666,Late,Upper middle
+12X271,East Bronx Academy for the Future,Bronx,New York City,494.0,8:14am,X973,71.1,5.3,10.5,79.0,56.99999999999999,114.0,91.8,16.8,29.2,668.0,Other,,False,0.668,8.233333333333333,Early,Highest poverty
+29Q265,Excelsior Preparatory High School,Queens,New York City,490.0,8:10am,Q420,81.5,4.8,6.5,87.0,52.0,124.0,57.1,7.8,16.0,438.0,Educational option,,False,0.438,8.166666666666666,Early,Lower middle
+09X525,Bronx Leadership Academy High School,Bronx,New York City,520.0,8:40am,X876,55.0,0.0,27.9,82.0,44.0,140.0,93.3,19.8,27.800000000000004,565.0,Educational option,4.0,False,0.565,8.666666666666666,Late,Highest poverty
+10X434,Belmont Preparatory High School,Bronx,New York City,495.0,8:15am,X435,75.9,24.1,4.6,89.0,63.0,87.0,84.2,12.1,23.1,390.0,Screened,16.0,False,0.39,8.25,Late,Upper middle
+12X242,Mott Hall V,Bronx,New York City,505.0,8:25am,X423,80.8,25.3,6.1,88.0,69.0,99.0,89.8,14.7,30.2,672.0,Educational option,25.0,False,0.672,8.416666666666666,Late,Highest poverty
+14K478,"The High School for Enterprise, Business and Technology",Brooklyn,New York City,480.0,8am,K450,73.7,3.9,9.5,85.0,61.0,179.0,81.89999999999999,11.6,16.1,831.0,Educational option,7.0,False,0.831,8.0,Early,Upper middle
+28Q686,Queens Metropolitan High School,Queens,New York City,480.0,8am,Q686,89.8,29.4,1.6,92.0,71.0,255.0,42.7,3.2,16.8,1104.0,Zoned,,False,1.104,8.0,Early,Lowest poverty
+06M346,Community Health Academy of the Heights,Manhattan,New York City,495.0,8:15am,M814,76.2,5.9,3.0,79.0,54.0,101.0,89.0,18.1,20.200000000000003,713.0,Educational option,6.0,False,0.713,8.25,Late,Highest poverty
+27Q262,Channel View School for Research,Queens,New York City,480.0,8am,Q410,91.6,7.6,2.5,89.0,73.0,119.0,62.8,2.1,11.7,967.0,Educational option,14.0,False,0.967,8.0,Early,Lower middle
+10X433,High School for Teaching and the Professions,Bronx,New York City,499.0,8:19am,X430,74.5,2.0,12.7,82.0,41.0,102.0,92.8,26.3,22.9,414.0,Educational option,3.0,False,0.414,8.316666666666666,Late,Highest poverty
+18K629,Cultural Academy for the Arts and Sciences,Brooklyn,New York City,480.0,8am,K415,65.0,1.3,15.0,87.0,38.0,80.0,73.2,11.7,21.6,282.0,Unscreened,3.0,False,0.282,8.0,Early,Upper middle
+06M211,Inwood Early College for Health and Information Technologies,Manhattan,New York City,525.0,8:45am,M052,56.1,0.0,1.0,91.0,,98.0,81.8,11.6,24.9,414.0,Educational option,14.0,False,0.414,8.75,Late,Upper middle
+17K590,Medgar Evers College Preparatory School,Brooklyn,New York City,435.0,7:15am,K590,92.9,41.1,1.0,89.0,80.0,197.0,53.5,0.4,6.7,1332.0,Screened,16.0,False,1.332,7.25,Early,Lowest poverty
+14K685,El Puente Academy for Peace and Justice,Brooklyn,New York City,540.0,9am,K778,78.6,0.0,3.6,82.0,47.0,56.0,88.4,18.3,25.9,224.0,Educational option,6.0,False,0.224,9.0,Late,Highest poverty
+10X445,"Bronx High School of Science, The",Bronx,New York City,480.0,8am,X445,99.5,93.8,0.0,97.0,98.0,741.0,37.5,0.0,1.4,3016.0,Specialized or test,,False,3.016,8.0,Early,Lowest poverty
+09X252,Mott Hall Bronx High School,Bronx,New York City,510.0,8:30am,X970,80.4,0.0,3.9,85.0,54.0,102.0,89.7,11.1,22.7,379.0,Educational option,13.0,False,0.379,8.5,Late,Highest poverty
+20K485,High School of Telecommunication Arts and Technology,Brooklyn,New York City,480.0,8am,K485,88.3,28.5,4.1,93.0,71.0,291.0,74.5,8.5,18.4,1235.0,Educational option,12.0,False,1.235,8.0,Early,Upper middle
+32K168,"Brooklyn School for Math and Research (B-SMARt), The",Brooklyn,New York City,495.0,8:15am,K480,80.0,12.3,6.2,88.0,68.0,65.0,80.30000000000001,9.7,17.7,277.0,Unscreened,6.0,False,0.277,8.25,Late,Upper middle
+02M615,Chelsea Career and Technical Education High School,Manhattan,New York City,495.0,8:15am,M615,76.0,14.6,1.0,86.0,56.99999999999999,96.0,76.6,4.0,20.6,451.0,Screened,21.0,False,0.451,8.25,Late,Upper middle
+09X412,Bronx High School of Business,Bronx,New York City,530.0,8:50am,X410,55.2,1.7,15.5,82.0,28.000000000000004,58.0,95.1,38.2,21.8,275.0,Educational option,4.0,False,0.275,8.833333333333334,Late,Highest poverty
+02M305,The Urban Assembly Academy of Government and Law,Manhattan,New York City,512.0,8:32am,M445,88.7,3.2,9.7,84.0,61.0,62.0,84.5,4.0,19.8,324.0,Educational option,7.0,False,0.324,8.533333333333333,Late,Upper middle
+17K548,Brooklyn School for Music & Theatre,Brooklyn,New York City,497.0,8:17am,K440,74.2,1.5,12.1,83.0,55.00000000000001,66.0,81.8,2.7,21.6,296.0,Educational option,7.0,False,0.296,8.283333333333333,Late,Upper middle
+19K660,W. H. Maxwell Career and Technical Education High School,Brooklyn,New York City,479.0,7:59am,K660,78.4,1.0,5.9,76.0,33.0,102.0,87.1,8.799999999999999,32.4,376.0,Educational option,2.0,False,0.376,7.983333333333333,Early,Highest poverty
+03M299,The Maxine Greene High School for Imaginative Inquiry,Manhattan,New York City,481.0,8:01am,M490,71.8,0.9,10.0,83.0,40.0,110.0,85.2,12.9,25.2,341.0,Educational option,2.0,False,0.341,8.016666666666667,Early,Highest poverty
+06M462,The College Academy,Manhattan,New York City,480.0,8am,M465,71.7,21.2,5.1,85.0,38.0,99.0,92.7,52.2,17.599999999999998,427.0,Educational option,4.0,False,0.427,8.0,Early,Highest poverty
+24Q520,Middle College High School at LaGuardia Community College,Queens,New York City,480.0,8am,Q520,73.0,0.0,0.0,92.0,77.0,115.0,72.5,1.2,16.900000000000002,508.0,Screened,18.0,False,0.508,8.0,Early,Upper middle
+11X253,Bronx High School for Writing and Communication Arts,Bronx,New York City,495.0,8:15am,X425,70.2,0.0,9.6,81.0,46.0,94.0,80.0,15.5,23.7,317.0,Unscreened,4.0,False,0.317,8.25,Late,Upper middle
+01M292,Orchard Collegiate Academy,Manhattan,New York City,,8:20pm,M056,89.3,7.1,10.7,87.0,36.0,28.0,86.7,11.7,27.9,197.0,Educational option,2.0,False,0.197,,,Highest poverty
+10X342,International School for Liberal Arts,Bronx,New York City,480.0,8am,X430,57.3,12.6,12.6,91.0,47.0,103.0,95.4,71.2,8.7,518.0,Screened,6.0,False,0.518,8.0,Early,Highest poverty
+14K071,Juan Morel Campos Secondary School,Brooklyn,New York City,480.0,8am,K071,55.7,1.0,14.4,87.0,23.0,97.0,91.3,27.800000000000004,34.0,515.0,Unscreened,4.0,False,0.515,8.0,Early,Highest poverty
+26Q315,Business Technology Early College High School (BTECH),Queens,New York City,500.0,8:20am,Q435,90.2,2.9,2.9,90.0,,102.0,57.4,4.0,12.9,519.0,Educational option,6.0,False,0.519,8.333333333333334,Late,Lower middle
+10X439,Bronx High School for Law and Community Service,Bronx,New York City,495.0,8:15am,X435,92.8,3.6,3.6,82.0,55.00000000000001,83.0,87.6,12.9,25.4,402.0,Educational option,13.0,False,0.402,8.25,Late,Highest poverty
+02M416,Eleanor Roosevelt High School,Manhattan,New York City,500.0,8:20am,M855,98.4,85.9,0.0,96.0,90.0,128.0,19.0,0.0,15.7,530.0,Screened,49.0,False,0.53,8.333333333333334,Late,Lowest poverty
+27Q324,Rockaway Park High School for Environmental Sustainability,Queens,New York City,480.0,8am,Q410,68.4,2.1,18.9,81.0,30.0,95.0,84.0,12.2,29.6,304.0,Educational option,3.0,False,0.304,8.0,Early,Upper middle
+19K510,World Academy for Total Community Health High School (WATCH),Brooklyn,New York City,485.0,8:05am,K435,69.4,4.2,13.9,81.0,52.0,72.0,88.3,15.2,19.6,250.0,Unscreened,2.0,False,0.25,8.083333333333334,Early,Highest poverty
+13K594,Gotham Professional Arts Academy,Brooklyn,New York City,525.0,8:45am,K040,,,,78.0,50.0,3.0,84.7,3.9,36.0,178.0,Educational option,3.0,False,0.178,8.75,Late,Upper middle
+07X259,"H.E.R.O. High (Health, Education, and Research Occupations High School)",Bronx,New York City,510.0,8:30am,X655,72.5,0.0,8.3,83.0,,109.0,86.7,10.0,20.9,530.0,Educational option,9.0,False,0.53,8.5,Late,Highest poverty
+15K519,Cobble Hill School of American Studies,Brooklyn,New York City,480.0,8am,K804,84.8,2.1,4.1,80.0,55.00000000000001,145.0,82.8,11.3,18.6,582.0,Educational option,6.0,False,0.582,8.0,Early,Upper middle
+02M520,Murry Bergtraum High School for Business Careers,Manhattan,New York City,490.0,8:10am,M520,72.6,0.0,8.1,83.0,39.0,62.0,80.4,6.0,23.6,182.0,Unscreened,1.0,False,0.182,8.166666666666666,Early,Upper middle
+09X263,Validus Preparatory Academy,Bronx,New York City,500.0,8:20am,X970,63.5,3.1,13.5,79.0,45.0,96.0,91.7,15.2,27.4,361.0,Educational option,7.0,False,0.361,8.333333333333334,Late,Highest poverty
+13K419,"Science Skills Center High School for Science, Technology and the Creative Arts",Brooklyn,New York City,487.0,8:07am,K805,92.7,9.1,2.7,93.0,68.0,110.0,74.7,3.3000000000000003,14.4,571.0,Educational option,9.0,False,0.571,8.116666666666667,Early,Upper middle
+21K525,Edward R. Murrow High School,Brooklyn,New York City,485.0,8:05am,K525,77.8,27.7,3.2,91.0,64.0,888.0,64.8,8.9,18.4,3693.0,Educational option,10.0,False,3.693,8.083333333333334,Early,Lower middle
+30Q286,"Young Women's Leadership School, Astoria (TYWLS)",Queens,New York City,480.0,8am,Q739,98.6,27.0,0.0,94.0,92.0,74.0,67.9,3.6,13.5,586.0,Screened,6.0,False,0.586,8.0,Early,Lower middle
+08X349,Bronx River High School,Bronx,New York City,495.0,8:15am,X405,71.9,2.1,21.9,83.0,,96.0,85.0,16.2,24.9,425.0,Educational option,7.0,False,0.425,8.25,Late,Upper middle
+02M529,Jacqueline Kennedy Onassis High School,Manhattan,New York City,530.0,8:50am,M486,54.7,4.0,12.0,79.0,46.0,150.0,78.60000000000001,9.0,20.1,443.0,Educational option,2.0,False,0.443,8.833333333333334,Late,Upper middle
+23K644,Eagle Academy for Young Men II,Brooklyn,New York City,525.0,8:45am,K271,87.5,8.8,3.8,90.0,55.00000000000001,80.0,72.89999999999999,0.5,27.200000000000003,651.0,Unscreened,5.0,False,0.651,8.75,Late,Upper middle
+16K455,Boys and Girls High School,Brooklyn,New York City,485.0,8:05am,K455,65.5,3.4,5.7,85.0,25.0,87.0,84.6,6.2,28.5,439.0,Screened,10.0,False,0.439,8.083333333333334,Early,Upper middle
+28Q310,Queens Collegiate: A College Board School,Queens,New York City,500.0,8:20am,Q470,68.5,12.0,1.9,89.0,63.0,108.0,66.7,9.1,16.900000000000002,669.0,Educational option,5.0,False,0.669,8.333333333333334,Late,Lower middle
+17K382,Academy for College Preparation and Career Exploration: A College Board School,Brooklyn,New York City,480.0,8am,K465,69.4,4.8,14.5,84.0,49.0,62.0,80.0,16.400000000000002,20.3,360.0,Educational option,2.0,False,0.36,8.0,Early,Upper middle
+30Q580,Baccalaureate School for Global Education,Queens,New York City,480.0,8am,Q798,98.2,74.5,0.0,95.0,95.0,55.0,41.0,1.9,7.5,534.0,Screened,20.0,False,0.534,8.0,Early,Lowest poverty
+25Q263,Flushing International High School,Queens,New York City,520.0,8:40am,Q189,57.9,0.0,19.6,91.0,65.0,107.0,96.9,86.9,2.3,426.0,Screened,4.0,False,0.426,8.666666666666666,Late,Highest poverty
+08X561,Bronx Compass High School,Bronx,New York City,500.0,8:20am,X450,77.5,0.0,15.7,81.0,45.0,102.0,87.0,10.8,23.4,381.0,Educational option,6.0,False,0.381,8.333333333333334,Late,Highest poverty
+02M551,Urban Assembly New York Harbor School,Manhattan,New York City,520.0,8:40am,M877,79.8,6.4,2.1,91.0,56.99999999999999,94.0,53.400000000000006,2.1,22.7,533.0,Educational option,7.0,False,0.533,8.666666666666666,Late,Lowest poverty
+21K690,Brooklyn Studio Secondary School,Brooklyn,New York City,480.0,8am,K721,76.9,15.0,6.4,87.0,65.0,173.0,72.2,16.0,20.1,929.0,Educational option,8.0,False,0.929,8.0,Early,Upper middle
+30Q501,Frank Sinatra School of the Arts High School,Queens,New York City,470.0,7:50am,Q570,89.7,53.5,1.6,93.0,95.0,185.0,35.7,0.8,18.8,853.0,Audition,13.0,False,0.853,7.833333333333333,Early,Lowest poverty
+11X513,New World High School,Bronx,New York City,475.0,7:55am,X362,78.5,20.3,3.8,93.0,77.0,79.0,94.8,68.8,5.800000000000001,381.0,Screened,7.0,False,0.381,7.916666666666667,Early,Highest poverty
+02M438,International High School at Union Square,Manhattan,New York City,525.0,8:45am,M460,66.7,0.0,15.1,87.0,52.0,93.0,98.3,86.2,2.8000000000000003,356.0,Screened,3.0,False,0.356,8.75,Late,Highest poverty
+10X374,Knowledge and Power Preparatory Academy International High School (KAPPA),Bronx,New York City,505.0,8:25am,X435,87.9,22.6,7.3,88.0,64.0,124.0,84.0,11.0,24.6,464.0,Educational option,39.0,False,0.464,8.416666666666666,Late,Upper middle
+24Q293,Civic Leadership Academy,Queens,New York City,510.0,8:30am,Q744,91.5,5.9,5.9,90.0,76.0,118.0,76.0,6.6000000000000005,19.9,593.0,Educational option,10.0,False,0.593,8.5,Late,Upper middle
+31R460,Susan E. Wagner High School,Staten Island,New York City,490.0,8:10am,R460,86.6,31.4,3.1,90.0,73.0,774.0,50.1,3.9,21.3,3383.0,Screened,37.0,False,3.383,8.166666666666666,Early,Lowest poverty
+09X350,New Directions Secondary School,Bronx,New York City,500.0,8:20am,X410,8.1,0.0,48.4,65.0,,62.0,95.5,38.2,28.9,228.0,Other,2.0,False,0.228,8.333333333333334,Late,Highest poverty
+14K474,PROGRESS High School for Professional Careers,Brooklyn,New York City,480.0,8am,K450,68.9,0.0,8.1,84.0,42.0,222.0,88.0,20.6,20.9,674.0,Educational option,4.0,False,0.674,8.0,Early,Highest poverty
+15K462,John Jay School for Law,Brooklyn,New York City,495.0,8:15am,K460,85.3,5.3,4.0,85.0,55.00000000000001,75.0,75.9,3.2,18.6,436.0,Educational option,14.0,False,0.436,8.25,Late,Upper middle
+10X696,High School of American Studies at Lehman College,Bronx,New York City,480.0,8am,X905,99.0,98.0,0.0,97.0,100.0,100.0,24.7,0.0,2.7,411.0,Specialized or test,,False,0.411,8.0,Early,Lowest poverty
+30Q301,Academy for Careers in Television and Film (ACTV),Queens,New York City,540.0,9am,Q404,97.1,43.9,0.0,93.0,81.0,139.0,52.6,1.6,21.4,562.0,Educational option,13.0,False,0.562,9.0,Late,Lowest poverty
+02M422,Quest to Learn,Manhattan,New York City,485.0,8:05am,M440,81.5,4.9,6.2,88.0,56.00000000000001,81.0,66.10000000000001,3.9,27.9,545.0,Educational option,6.0,False,0.545,8.083333333333334,Early,Lower middle
+10X353,World View High School,Bronx,New York City,546.0,9:06am,X440,88.1,0.0,4.6,89.0,,109.0,80.30000000000001,25.0,17.4,551.0,Unscreened,11.0,False,0.551,9.1,Late,Upper middle
+17K543,"Science, Technology and Research Early College High School at Erasmus (STAR)",Brooklyn,New York City,480.0,8;00am,K465,100.0,27.8,0.0,96.0,83.0,90.0,59.7,1.2,15.3,576.0,Screened,19.0,False,0.576,8.0,Early,Lower middle
+08X269,Bronx Studio School for Writers and Artists,Bronx,New York City,495.0,8:15am,X392,67.4,1.1,12.4,84.0,50.0,89.0,90.5,12.2,26.8,645.0,Educational option,8.0,False,0.645,8.25,Late,Highest poverty
+29Q313,Benjamin Franklin High School for Finance & Information Technology,Queens,New York City,510.0,8:30am,Q490,84.4,12.2,3.3,87.0,,90.0,68.30000000000001,13.1,17.2,389.0,Unscreened,5.0,False,0.389,8.5,Late,Lower middle
+12X684,Wings Academy,Bronx,New York City,480.0,8am,X879,52.7,0.0,18.3,81.0,35.0,93.0,90.8,5.0,29.4,463.0,Educational option,4.0,False,0.463,8.0,Early,Highest poverty
+19K583,Multicultural High School,Brooklyn,New York City,500.0,8:20am,K420,77.8,1.6,11.1,90.0,49.0,63.0,99.8,87.6,1.1,267.0,Screened,2.0,False,0.267,8.333333333333334,Late,Highest poverty
+08X432,Bronx Bridges High School,Bronx,New York City,480.0,8am,X450,65.6,7.5,15.1,81.0,42.0,93.0,97.6,83.89999999999999,10.3,329.0,Screened,3.0,False,0.329,8.0,Early,Highest poverty
+25Q525,Townsend Harris High School,Queens,New York City,500.0,8:20am,Q515,99.7,96.9,0.3,97.0,100.0,288.0,37.2,0.1,4.4,1182.0,Screened,22.0,False,1.182,8.333333333333334,Late,Lowest poverty
+02M544,Independence High School,Manhattan,New York City,,,M834,18.7,0.0,28.4,62.0,,155.0,87.1,7.5,25.7,319.0,Other,1.0,False,0.319,,,Highest poverty
+02M393,Business of Sports School (BOSS),Manhattan,New York City,500.0,8:20am,M625,83.5,1.1,7.7,84.0,63.0,91.0,79.3,8.200000000000001,24.0,429.0,Educational option,12.0,False,0.429,8.333333333333334,Late,Upper middle
+03M403,The Global Learning Collaborative,Manhattan,New York City,510.0,8:30am,M470,71.7,5.1,8.1,86.0,60.0,99.0,83.5,12.3,20.3,414.0,Educational option,10.0,False,0.414,8.5,Late,Upper middle
+14K454,The Williamsburg High School of Arts and Technology,Brooklyn,New York City,480.0,8am,K049,80.3,0.0,14.1,85.0,32.0,71.0,82.8,23.8,24.8,302.0,Educational option,8.0,False,0.302,8.0,Early,Upper middle
+02M546,Academy for Software Engineering (AFSE),Manhattan,New York City,540.0,9am,M460,92.5,0.0,2.8,90.0,82.0,107.0,67.10000000000001,4.1000000000000005,25.3,459.0,Educational option,26.0,False,0.459,9.0,Late,Lower middle
+29Q259,Pathways College Preparatory School: A College Board School,Queens,New York City,490.0,8:10am,Q192,76.0,6.7,2.7,91.0,56.99999999999999,75.0,47.7,3.1,14.3,588.0,Other,,False,0.588,8.166666666666666,Early,Lowest poverty
+19K502,FDNY-Captain Vernon A. Richard High School for Fire and Life Safety,Brooklyn,New York City,480.0,8am,K435,81.5,5.6,13.0,80.0,32.0,54.0,83.8,4.0,27.4,277.0,Educational option,3.0,False,0.277,8.0,Early,Upper middle
+18K566,Brooklyn Generation School,Brooklyn,New York City,510.0,8:30am,K515,75.0,0.0,16.7,91.0,51.0,48.0,75.4,12.2,23.8,189.0,Educational option,2.0,False,0.189,8.5,Late,Upper middle
+09X327,Comprehensive Model School Project M.S. 327,Bronx,New York City,480.0,8am,X240,86.7,18.3,4.2,88.0,72.0,120.0,90.3,11.3,26.4,735.0,Unscreened,9.0,False,0.735,8.0,Early,Highest poverty
+26Q430,Francis Lewis High School,Queens,New York City,510.0,8:30am,Q430,84.1,53.3,2.3,92.0,75.0,1108.0,58.3,10.5,14.499999999999998,4492.0,Educational option,69.0,False,4.492,8.5,Late,Lower middle
+14K561,Williamsburg Preparatory School,Brooklyn,New York City,540.0,9am,K650,94.7,17.9,0.7,90.0,74.0,151.0,78.10000000000001,4.7,21.1,682.0,Educational option,12.0,False,0.682,9.0,Late,Upper middle
+21K572,Expeditionary Learning School for Community Leaders,Brooklyn,New York City,515.0,8:35am,K400,80.5,0.0,1.2,87.0,70.0,82.0,76.9,15.6,20.4,378.0,Educational option,5.0,False,0.378,8.583333333333334,Late,Upper middle
+10X213,Bronx Engineering and Technology Academy,Bronx,New York City,495.0,8:15am,X475,62.9,2.1,4.1,82.0,53.0,97.0,86.7,18.6,24.7,377.0,Educational option,11.0,False,0.377,8.25,Late,Highest poverty
+07X495,University Heights Secondary School,Bronx,New York City,525.0,8:45am,X470,98.1,0.0,0.9,93.0,78.0,106.0,80.30000000000001,2.5,18.7,519.0,Screened,24.0,False,0.519,8.75,Late,Upper middle
+32K556,Bushwick Leaders High School for Academic Excellence,Brooklyn,New York City,480.0,8am,K865,67.7,0.0,8.1,81.0,42.0,62.0,91.9,25.8,27.200000000000003,302.0,Educational option,6.0,False,0.302,8.0,Early,Highest poverty
+02M459,Manhattan International High School,Manhattan,New York City,525.0,8:45am,M480,61.3,0.0,16.1,89.0,56.00000000000001,93.0,94.5,71.6,1.6,313.0,Screened,4.0,False,0.313,8.75,Late,Highest poverty
+28Q440,Forest Hills High School,Queens,New York City,540.0,9am,Q440,81.6,40.5,0.9,90.0,73.0,1013.0,57.7,8.6,15.7,3806.0,Educational option,24.0,False,3.806,9.0,Late,Lower middle
+09X260,Bronx Center for Science and Mathematics,Bronx,New York City,447.0,7:27am,X002,89.9,43.1,2.8,91.0,75.0,109.0,82.6,5.800000000000001,23.200000000000003,448.0,Educational option,36.0,False,0.448,7.45,Early,Upper middle
+09X403,Bronx International High School,Bronx,New York City,540.0,9am,X400,63.5,0.0,9.4,80.0,41.0,96.0,99.4,91.4,2.9000000000000004,418.0,Screened,6.0,False,0.418,9.0,Late,Highest poverty
+12X248,"Metropolitan High School, The",Bronx,New York City,485.0,8:05am,X099,54.4,0.0,25.4,76.0,43.0,114.0,92.5,22.5,30.1,356.0,Unscreened,1.0,False,0.356,8.083333333333334,Early,Highest poverty
+28Q680,Queens Gateway to Health Sciences Secondary School,Queens,New York City,480.0,8am,Q695,94.8,62.5,4.2,95.0,92.0,96.0,52.2,1.1,12.9,711.0,Screened,19.0,False,0.711,8.0,Early,Lowest poverty
+25Q240,Veritas Academy,Queens,New York City,480.0,8am,Q460,77.7,11.5,5.0,89.0,,139.0,68.30000000000001,7.9,18.2,567.0,Unscreened,4.0,False,0.567,8.0,Early,Lower middle
+21K348,High School of Sports Management,Brooklyn,New York City,495.0,8:15am,K400,66.0,4.0,0.0,81.0,48.0,50.0,80.5,12.4,22.4,241.0,Educational option,3.0,False,0.241,8.25,Late,Upper middle
+20K490,Fort Hamilton High School,Brooklyn,New York City,540.0,9am,K490,75.3,27.0,8.2,90.0,70.0,1111.0,71.89999999999999,15.0,14.7,4559.0,Screened,35.0,False,4.559,9.0,Late,Upper middle
+05M148,Eagle Academy for Young Men of Harlem,Manhattan,New York City,510.0,8:30am,M136,,,,89.0,,1.0,80.2,4.3,30.5,374.0,Educational option,3.0,False,0.374,8.5,Late,Upper middle
+02M411,Baruch College Campus High School,Manhattan,New York City,510.0,8:30am,M874,100.0,63.4,0.0,97.0,94.0,112.0,38.8,1.1,12.6,475.0,Screened,49.0,False,0.475,8.5,Late,Lowest poverty
+07X527,Bronx Leadership Academy II High School,Bronx,New York City,510.0,8:30am,X790,75.2,6.0,12.8,84.0,64.0,133.0,92.1,13.1,27.800000000000004,511.0,Educational option,17.0,False,0.511,8.5,Late,Highest poverty
+17K546,High School for Public Service: Heroes of Tomorrow,Brooklyn,New York City,510.0,8:30am,K470,84.8,17.1,1.0,93.0,84.0,105.0,71.8,1.5,15.8,462.0,Screened,14.0,False,0.462,8.5,Late,Upper middle
+32K552,The Academy of Urban Planning and Engineering,Brooklyn,New York City,480.0,8am,K480,64.2,5.7,11.3,89.0,34.0,53.0,88.4,23.8,27.3,231.0,Educational option,3.0,False,0.231,8.0,Early,Highest poverty
+31R028,The Eagle Academy for Young Men of Staten Island,Staten Island,New York City,510.0,8:30am,R049,,,,,,,75.6,6.3,37.4,270.0,Unscreened,1.0,False,0.27,8.5,Late,Upper middle
+09X564,Claremont International High School,Bronx,New York City,520.0,8:40am,X410,78.3,0.0,7.2,84.0,49.0,83.0,99.2,84.5,5.0,361.0,Screened,6.0,False,0.361,8.666666666666666,Late,Highest poverty
+06M293,City College Academy of the Arts,Manhattan,New York City,495.0,8:15am,M218,94.6,27.0,1.4,94.0,88.0,74.0,79.4,5.4,14.6,608.0,Screened,23.0,False,0.608,8.25,Late,Upper middle
+31R605,Staten Island Technical High School,Staten Island,New York City,465.0,7:45am,R440,100.0,96.3,0.0,97.0,88.0,323.0,33.7,0.0,1.2,1331.0,Specialized or test,,False,1.331,7.75,Early,Lowest poverty
+11X508,Bronxdale High School,Bronx,New York City,504.0,8:24am,X415,77.5,2.7,8.1,84.0,50.0,111.0,74.3,6.800000000000001,22.9,459.0,Unscreened,13.0,False,0.459,8.4,Late,Upper middle
+02M630,Art and Design High School,Manhattan,New York City,500.0,8:20am,M488,88.3,33.6,1.9,90.0,66.0,324.0,56.3,0.8,21.2,1478.0,Audition,7.0,False,1.478,8.333333333333334,Late,Lower middle
+08X312,Millennium Art Academy,Bronx,New York City,490.0,8:10am,X450,73.8,1.0,10.7,85.0,44.0,103.0,81.8,6.6000000000000005,25.1,422.0,Educational option,6.0,False,0.422,8.166666666666666,Early,Upper middle
+02M533,Union Square Academy for Health Sciences,Manhattan,New York City,500.0,8:20am,M460,78.7,10.6,6.4,88.0,79.0,94.0,82.0,7.5,15.5,414.0,Educational option,14.0,False,0.414,8.333333333333334,Late,Upper middle
+24Q585,Maspeth High School,Queens,New York City,495.0,8:15am,Q585,98.0,41.8,0.8,92.0,84.0,249.0,54.0,3.0,15.8,1212.0,Unscreened,19.0,False,1.212,8.25,Late,Lowest poverty
+04M555,Central Park East High School,Manhattan,New York City,545.0,9:05am,M013,98.2,24.8,0.0,95.0,88.0,113.0,72.7,1.7999999999999998,15.9,508.0,Screened,40.0,False,0.508,9.083333333333334,Late,Upper middle
+09X241,The Urban Assembly School for Applied Math and Science,Bronx,New York City,515.0,8:35m,X970,68.3,15.9,14.6,86.0,76.0,82.0,90.4,12.7,28.2,606.0,Educational option,14.0,False,0.606,8.583333333333334,Late,Highest poverty
+31R440,New Dorp High School,Staten Island,New York City,480.0,8am,R435,81.3,26.1,4.7,87.0,56.00000000000001,704.0,53.3,4.5,23.3,3051.0,Educational option,5.0,False,3.051,8.0,Early,Lowest poverty
+12X550,High School of World Cultures,Bronx,New York City,480.0,8am,X420,54.4,6.1,16.7,80.0,21.0,114.0,98.0,79.7,3.9,459.0,Screened,2.0,False,0.459,8.0,Early,Highest poverty
+25Q285,World Journalism Preparatory: A College Board School,Queens,New York City,480.0,8am,Q025,95.9,13.7,1.4,93.0,85.0,73.0,44.5,1.9,17.9,582.0,Educational option,9.0,False,0.582,8.0,Early,Lowest poverty
+25Q425,John Bowne High School,Queens,New York City,515.0,8:35am,Q425,72.5,15.5,8.8,86.0,55.00000000000001,890.0,73.7,17.7,14.8,3522.0,Educational option,7.0,False,3.522,8.583333333333334,Late,Upper middle
+28Q505,Hillcrest High School,Queens,New York City,480.0,8am,Q505,74.3,12.7,10.4,87.0,59.0,798.0,72.39999999999999,18.0,11.1,3300.0,Educational option,11.0,False,3.3,8.0,Early,Upper middle
+31R080,The Michael J. Petrides School,Staten Island,New York City,480.0,8am,R880,94.5,30.3,0.0,92.0,59.0,109.0,44.0,1.4,28.6,1330.0,Educational option,8.0,False,1.33,8.0,Early,Lowest poverty
+10X437,Fordham High School for the Arts,Bronx,New York City,480.0,8am,X435,95.2,22.6,1.6,91.0,72.0,62.0,79.5,3.8,21.6,319.0,Audition,10.0,False,0.319,8.0,Early,Upper middle
+19K504,High School for Civil Rights,Brooklyn,New York City,480.0,8am,K435,56.7,1.5,22.4,74.0,34.0,67.0,86.6,11.7,26.8,239.0,Unscreened,3.0,False,0.239,8.0,Early,Highest poverty
+05M157,The Urban Assembly School for Global Commerce,Manhattan,New York City,480.0,8am,M501,66.7,0.0,18.8,85.0,,48.0,90.4,10.0,27.6,250.0,Educational option,3.0,False,0.25,8.0,Early,Highest poverty
+09X324,Bronx Early College Academy for Teaching & Learning,Bronx,New York City,480.0,8am,X166,100.0,27.0,0.0,85.0,72.0,63.0,88.9,9.2,18.8,510.0,Screened,16.0,False,0.51,8.0,Early,Highest poverty
+15K463,Secondary School for Journalism,Brooklyn,New York City,495.0,8:15am,K460,51.7,0.0,19.0,84.0,61.0,58.0,79.80000000000001,14.2,19.0,268.0,Educational option,2.0,False,0.268,8.25,Late,Upper middle
+26Q566,"Queens High School of Teaching, Liberal Arts and the Sciences",Queens,New York City,510.0,8:30am,Q566,90.8,10.0,2.2,91.0,79.0,271.0,39.8,2.4,20.1,1070.0,Educational option,4.0,False,1.07,8.5,Late,Lowest poverty
+11X455,Harry S Truman High School,Bronx,New York City,480.0,8am,X455,71.2,7.4,16.2,90.0,38.0,513.0,75.1,8.4,26.200000000000003,2081.0,Educational option,5.0,False,2.081,8.0,Early,Upper middle
+08X282,Women's Academy of Excellence,Bronx,New York City,500.0,8:20am,X174,59.4,1.6,20.3,75.0,42.0,64.0,88.6,21.4,20.200000000000003,248.0,Educational option,3.0,False,0.248,8.333333333333334,Late,Highest poverty
+12X521,"Metropolitan Soundview High School, The",Bronx,New York City,480.0,8am,X420,66.7,1.9,15.7,79.0,53.0,108.0,88.4,15.6,23.9,423.0,Educational option,6.0,False,0.423,8.0,Early,Highest poverty
+22K535,Leon M. Goldstein High School for the Sciences,Brooklyn,New York City,492.0,8:12am,K535,95.7,75.7,0.4,96.0,75.0,235.0,43.2,0.5,16.7,1057.0,Screened,21.0,False,1.057,8.2,Early,Lowest poverty
+29Q326,Cambria Heights Academy,Queens,New York City,500.0,8:20am,Q799,80.2,0.0,2.1,86.0,75.0,96.0,58.1,10.3,16.8,370.0,Educational option,6.0,False,0.37,8.333333333333334,Late,Lower middle
+05M362,Columbia Secondary School,Manhattan,New York City,480.0,8am,M125,96.0,62.0,0.0,94.0,88.0,100.0,51.6,0.6,16.2,718.0,Screened,40.0,False,0.718,8.0,Early,Lowest poverty
+15K448,Brooklyn Collaborative Studies,Brooklyn,New York City,525.0,8:45am,K142,88.4,0.0,6.3,84.0,74.0,95.0,67.2,5.4,29.5,684.0,Educational option,6.0,False,0.684,8.75,Late,Lower middle
+27Q351,Rockaway Collegiate High School,Queens,New York City,480.0,8am,Q410,59.3,4.9,13.6,82.0,39.0,81.0,80.10000000000001,8.200000000000001,30.1,306.0,Unscreened,2.0,False,0.306,8.0,Early,Upper middle
+10X549,Discovery High School,Bronx,New York City,525.0,8:45am,X430,81.0,5.2,8.6,88.0,46.0,116.0,90.2,25.1,25.3,490.0,Unscreened,6.0,False,0.49,8.75,Late,Highest poverty
+32K549,"Brooklyn School for Social Justice, The",Brooklyn,New York City,495.0,8:15am,K480,62.1,1.9,8.7,78.0,48.0,103.0,92.0,35.8,22.1,335.0,Educational option,3.0,False,0.335,8.25,Late,Highest poverty
+29Q272,George Washington Carver High School for the Sciences,Queens,New York City,490.0,8:10am,Q420,67.0,1.0,4.0,88.0,66.0,100.0,59.9,5.0,17.0,417.0,Educational option,6.0,False,0.417,8.166666666666666,Early,Lower middle
+19K639,Brooklyn Lab School,Brooklyn,New York City,480.0,8am,K420,65.3,0.0,20.0,79.0,42.0,75.0,87.0,35.3,20.0,430.0,Educational option,3.0,False,0.43,8.0,Early,Highest poverty
+27Q650,"High School for Construction Trades, Engineering and Architecture",Queens,New York City,480.0,8am,Q650,98.3,47.3,0.8,94.0,82.0,237.0,51.9,1.6,16.3,1066.0,Screened,16.0,False,1.066,8.0,Early,Lowest poverty
+05M692,"High School for Mathematics, Science and Engineering at City College (HSMSE)",Manhattan,New York City,480.0,8am,M812,99.1,90.6,0.0,96.0,99.0,106.0,37.6,0.2,5.1,491.0,Specialized or test,,False,0.491,8.0,Early,Lowest poverty

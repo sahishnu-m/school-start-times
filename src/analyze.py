@@ -36,7 +36,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 from scipy import stats
 
-from .config import CONFIG, OUTPUTS_DIR
+from .config import outputs_dir, site_config
 
 # Robust standard errors. Schools vary enormously in size, so the spread of an
 # outcome around the regression line is larger for a school of 200 students
@@ -45,23 +45,42 @@ from .config import CONFIG, OUTPUTS_DIR
 # small samples, which is what this study has.
 COVARIANCE_TYPE = "HC3"
 
-# Human readable names used in tables and on the dashboard.
+# Human readable names used in tables and on the dashboard. One dictionary
+# covers both sites, since the column names do not collide.
 VARIABLE_LABELS = {
     "start_hours": "Start time (per hour later)",
-    "direct_cert_pct": "Direct certification rate (percent)",
+    "poverty_pct": "Student poverty",
     "enrollment_1000": "Enrollment (per 1,000 students)",
     "el_pct": "English learners (percent)",
+    "swd_pct": "Students with disabilities (percent)",
+    "applicants_per_seat": "Applicants per seat",
     "C(locale_group)": "Locale (city, suburb, town, rural)",
     "C(district)": "District fixed effects",
+    "C(borough)": "Borough fixed effects",
+    "C(admissions_method)": "Admissions method",
 }
 
 OUTCOME_LABELS = {
+    # Nevada
     "act_composite": "ACT composite score",
-    "grad_rate": "Four year graduation rate (percent)",
     "ela_proficient_pct": "ELA proficiency (percent)",
     "math_proficient_pct": "Math proficiency (percent)",
     "chronic_absent_pct": "Chronic absenteeism (percent)",
+    # New York City
+    "advanced_regents_pct": "Advanced Regents diploma rate (percent)",
+    "attendance_rate": "Attendance rate (percent)",
+    "college_career_rate": "College and career readiness (percent)",
+    "dropout_pct": "Dropout rate (percent)",
+    # Both
+    "grad_rate": "Four year graduation rate (percent)",
 }
+
+
+def variable_label(name: str, site: str | None = None) -> str:
+    """A readable label, using the site's own name for the poverty measure."""
+    if name == "poverty_pct":
+        return site_config(site).get("poverty_label", "Student poverty")
+    return VARIABLE_LABELS.get(name, name)
 
 
 def analysis_sample(frame: pd.DataFrame, outcome: str, controls: list[str]) -> pd.DataFrame:
@@ -115,7 +134,9 @@ def unadjusted_correlation(frame: pd.DataFrame, outcome: str) -> dict:
     }
 
 
-def fit_one_model(frame: pd.DataFrame, outcome: str, controls: list[str]) -> dict | None:
+def fit_one_model(
+    frame: pd.DataFrame, outcome: str, controls: list[str], site: str | None = None
+) -> dict | None:
     """Fit one regression of an outcome on start time plus a set of controls."""
     subset = analysis_sample(frame, outcome, controls)
 
@@ -146,8 +167,23 @@ def fit_one_model(frame: pd.DataFrame, outcome: str, controls: list[str]) -> dic
     for control in controls:
         formula += f" + {control}"
 
+    # Standard errors. The default is heteroskedasticity robust, which handles
+    # the spread of an outcome widening with school size.
+    #
+    # Where a site declares a cluster column, cluster robust errors are used
+    # instead. In New York City several schools share one building, and schools
+    # in the same building share a neighbourhood, a facility, and often the
+    # same pool of applicants. Treating them as independent observations would
+    # make the standard errors too small and the intervals too narrow.
+    cluster_column = site_config(site).get("cluster_column")
+    fit_kwargs: dict = {"cov_type": COVARIANCE_TYPE}
+    if cluster_column and cluster_column in subset.columns:
+        groups = subset[cluster_column]
+        if groups.notna().all() and groups.nunique() > 1:
+            fit_kwargs = {"cov_type": "cluster", "cov_kwds": {"groups": groups}}
+
     try:
-        model = smf.ols(formula, data=subset).fit(cov_type=COVARIANCE_TYPE)
+        model = smf.ols(formula, data=subset).fit(**fit_kwargs)
     except Exception:
         return None
 
@@ -168,25 +204,30 @@ def fit_one_model(frame: pd.DataFrame, outcome: str, controls: list[str]) -> dic
     }
 
 
-def model_ladder(frame: pd.DataFrame, outcome: str, blocks: list[dict] | None = None) -> pd.DataFrame:
+def model_ladder(
+    frame: pd.DataFrame,
+    outcome: str,
+    blocks: list[dict] | None = None,
+    site: str | None = None,
+) -> pd.DataFrame:
     """Fit the sequence of models defined in config.yaml.
 
     The returned table is the centrepiece of the results: one row per model
     specification, showing what happens to the start time coefficient as
     controls are added.
     """
-    blocks = blocks or CONFIG["model_blocks"]
+    blocks = blocks or site_config(site)["model_blocks"]
     rows = []
 
     for index, block in enumerate(blocks, start=1):
         controls = block["controls"]
-        result = fit_one_model(frame, outcome, controls)
+        result = fit_one_model(frame, outcome, controls, site)
         unidentified = result.pop("unidentified", None) if result else None
 
         row = {
             "model_number": index,
             "specification": block["name"],
-            "controls": ", ".join(VARIABLE_LABELS.get(c, c) for c in controls) or "none",
+            "controls": ", ".join(variable_label(c, site) for c in controls) or "none",
             "outcome": outcome,
             "outcome_label": OUTCOME_LABELS.get(outcome, outcome),
         }
@@ -217,7 +258,7 @@ def model_ladder(frame: pd.DataFrame, outcome: str, blocks: list[dict] | None = 
     return pd.DataFrame(rows)
 
 
-def stratified_comparison(frame: pd.DataFrame, outcome: str) -> pd.DataFrame:
+def stratified_comparison(frame: pd.DataFrame, outcome: str, site: str | None = None) -> pd.DataFrame:
     """Compare early and late starting schools inside each poverty band.
 
     Within a band, schools serve broadly similar student populations, so a
@@ -230,7 +271,7 @@ def stratified_comparison(frame: pd.DataFrame, outcome: str) -> pd.DataFrame:
     subset = frame.dropna(subset=["start_group", "poverty_band", outcome])
     rows = []
 
-    for band in CONFIG["stratification"]["poverty_band_labels"]:
+    for band in site_config(site)["stratification"]["poverty_band_labels"]:
         in_band = subset[subset["poverty_band"] == band]
         early = in_band[in_band["start_group"] == "Early"][outcome]
         late = in_band[in_band["start_group"] == "Late"][outcome]
@@ -285,10 +326,15 @@ def descriptive_statistics(frame: pd.DataFrame) -> pd.DataFrame:
     schools supports a much weaker claim than one present for all 90, and a
     reader cannot tell which is which from a mean alone.
     """
+    # Every variable either site might have. Columns that are not in this
+    # site's data are skipped, so one list serves both.
     columns = [
-        "start_minutes", "start_hours", "act_composite", "grad_rate",
-        "ela_proficient_pct", "math_proficient_pct", "chronic_absent_pct",
-        "direct_cert_pct", "frl_pct_ccd", "el_pct", "enrollment",
+        "start_minutes", "start_hours",
+        "act_composite", "grad_rate", "ela_proficient_pct", "math_proficient_pct",
+        "chronic_absent_pct", "advanced_regents_pct", "attendance_rate",
+        "college_career_rate", "dropout_pct",
+        "poverty_pct", "frl_pct_ccd", "el_pct", "swd_pct", "enrollment",
+        "applicants_per_seat",
     ]
     rows = []
     for column in columns:
@@ -311,7 +357,32 @@ def descriptive_statistics(frame: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def censoring_sensitivity(frame: pd.DataFrame) -> pd.DataFrame:
+def selective_school_sensitivity(frame: pd.DataFrame, site: str | None = None) -> pd.DataFrame:
+    """Refit the models without the schools that admit by exam or audition.
+
+    New York City has eight specialized high schools that admit on a citywide
+    entrance exam, plus a handful that audition. They are the extreme of the
+    distribution on both variables in this study: they start earlier than
+    average, and 90 percent of their students earn an Advanced Regents diploma
+    against about 14 percent citywide. Eight schools cannot be allowed to set
+    the slope for four hundred, so the models are refitted without them and
+    both versions are reported.
+    """
+    settings = site_config(site)
+    excluded = settings.get("robustness_exclude_admissions")
+    if not excluded or "admissions_method" not in frame.columns:
+        return pd.DataFrame()
+
+    kept = frame[~frame["admissions_method"].isin(excluded)]
+    outcomes = [settings["outcomes"]["primary"]] + settings["outcomes"]["secondary"]
+    ladders = pd.concat(
+        [model_ladder(kept, outcome, site=site) for outcome in outcomes], ignore_index=True
+    )
+    ladders["specification"] = ladders["specification"] + " (exam and audition schools dropped)"
+    return ladders
+
+
+def censoring_sensitivity(frame: pd.DataFrame, site: str | None = None) -> pd.DataFrame:
     """Refit the graduation rate models after dropping censored values.
 
     Nevada publishes ">95" instead of a graduation rate for its highest
@@ -320,44 +391,57 @@ def censoring_sensitivity(frame: pd.DataFrame) -> pd.DataFrame:
     time coefficient moves a lot, the midpoint substitution was doing real work
     and the graduation rate results should be treated with more caution.
     """
-    if "grad_rate_censored" not in frame.columns:
+    if "outcome_censored" not in frame.columns:
         return pd.DataFrame()
 
-    uncensored = frame[frame["grad_rate_censored"] != True]  # noqa: E712
-    ladder = model_ladder(uncensored, "grad_rate")
+    censored = frame["outcome_censored"].fillna(False).astype(bool)
+    if not censored.any():
+        # New York City publishes exact rates, so there is nothing to check.
+        return pd.DataFrame()
+
+    ladder = model_ladder(frame[~censored], "grad_rate", site=site)
     ladder["specification"] = ladder["specification"] + " (censored values dropped)"
     return ladder
 
 
-def run(frame: pd.DataFrame) -> dict:
-    """Run every piece of the analysis and write the tables to /outputs."""
-    print("Running analysis")
-    OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+def run(frame: pd.DataFrame, site: str | None = None) -> dict:
+    """Run every piece of the analysis and write the tables to this site's outputs."""
+    settings = site_config(site)
+    site = settings["name"]
+    print(f"Running analysis for {settings['label']}")
 
-    primary = CONFIG["outcomes"]["primary"]
-    outcomes = [primary] + CONFIG["outcomes"]["secondary"]
+    out_dir = outputs_dir(site)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    primary = settings["outcomes"]["primary"]
+    outcomes = [primary] + settings["outcomes"]["secondary"]
 
     descriptives = descriptive_statistics(frame)
-    descriptives.to_csv(OUTPUTS_DIR / "descriptive_statistics.csv", index=False)
+    descriptives.to_csv(out_dir / "descriptive_statistics.csv", index=False)
 
     correlations = pd.DataFrame(
         [unadjusted_correlation(frame, outcome) for outcome in outcomes]
     )
-    correlations.to_csv(OUTPUTS_DIR / "unadjusted_correlations.csv", index=False)
+    correlations.to_csv(out_dir / "unadjusted_correlations.csv", index=False)
 
     ladders = pd.concat(
-        [model_ladder(frame, outcome) for outcome in outcomes], ignore_index=True
+        [model_ladder(frame, outcome, site=site) for outcome in outcomes], ignore_index=True
     )
-    ladders.to_csv(OUTPUTS_DIR / "model_ladder.csv", index=False)
+    ladders.to_csv(out_dir / "model_ladder.csv", index=False)
 
     strata = pd.concat(
-        [stratified_comparison(frame, outcome) for outcome in outcomes], ignore_index=True
+        [stratified_comparison(frame, outcome, site=site) for outcome in outcomes],
+        ignore_index=True,
     )
-    strata.to_csv(OUTPUTS_DIR / "stratified_comparison.csv", index=False)
+    strata.to_csv(out_dir / "stratified_comparison.csv", index=False)
 
-    sensitivity = censoring_sensitivity(frame)
+    sensitivity = censoring_sensitivity(frame, site)
     if not sensitivity.empty:
-        sensitivity.to_csv(OUTPUTS_DIR / "censoring_sensitivity.csv", index=False)
+        sensitivity.to_csv(out_dir / "censoring_sensitivity.csv", index=False)
+
+    selective = selective_school_sensitivity(frame, site)
+    if not selective.empty:
+        selective.to_csv(out_dir / "selective_school_sensitivity.csv", index=False)
 
     primary_row = correlations[correlations["outcome"] == primary].iloc[0]
     print(f"  unadjusted correlation for {OUTCOME_LABELS.get(primary, primary)}: "
@@ -369,4 +453,5 @@ def run(frame: pd.DataFrame) -> dict:
         "ladders": ladders,
         "strata": strata,
         "sensitivity": sensitivity,
+        "selective": selective,
     }

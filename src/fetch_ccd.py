@@ -40,7 +40,7 @@ import json
 import pandas as pd
 import requests
 
-from .config import CONFIG, INTERIM_DIR, RAW_DIR
+from .config import INTERIM_DIR, RAW_DIR, site_config
 from .polite import USER_AGENT, polite_json_get
 
 API_ROOT = "https://educationdata.urban.org/api/v1/"
@@ -65,7 +65,7 @@ def _make_session() -> requests.Session:
 
 def run(year: int | None = None) -> pd.DataFrame:
     """Fetch the Nevada CCD directory and write it to data/interim."""
-    year = year or CONFIG["ccd_year"]
+    year = year or site_config("nevada")["ccd_year"]
     raw_path = RAW_DIR / f"ccd_directory_{year}.json"
 
     if raw_path.exists():
@@ -119,7 +119,7 @@ def high_school_frame(ccd: pd.DataFrame) -> pd.DataFrame:
     unusual name. The federal file records the highest grade a school offers,
     which is the thing the study actually cares about.
     """
-    sample_config = CONFIG["sample"]
+    sample_config = site_config("nevada")["sample"]
     frame = ccd.copy()
 
     if sample_config["require_grade_12"]:

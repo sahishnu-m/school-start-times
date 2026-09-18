@@ -33,7 +33,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 from .clean import minutes_to_clock
-from .config import CONFIG, INTERIM_DIR, OUTPUTS_DIR, ROBOTS_LOG, SCRAPE_LOG, SCRAPER_SOURCES
+from .config import CONFIG, INTERIM_DIR, SCRAPER_SOURCES, outputs_dir
 from .polite import PoliteFetcher
 
 SCRAPE_CONFIG = CONFIG["scraping"]
@@ -564,15 +564,16 @@ def run(schools: pd.DataFrame) -> pd.DataFrame:
         print(f"    {len(found)} time candidates, {matched} matched to a school")
         all_candidates.extend(found)
 
-    OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(log_rows).to_csv(SCRAPE_LOG, index=False)
-    pd.DataFrame(fetcher.robots_decisions).to_csv(ROBOTS_LOG, index=False)
+    out_dir = outputs_dir("nevada")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(log_rows).to_csv(out_dir / "scrape_log.csv", index=False)
+    pd.DataFrame(fetcher.robots_decisions).to_csv(out_dir / "robots_decisions.csv", index=False)
 
     # Leads are addresses a person should open by hand. They are deduplicated
     # because a district will link the same bell schedule from several pages.
     if lead_rows:
         leads = pd.DataFrame(lead_rows).drop_duplicates(subset=["url"])
-        leads.to_csv(OUTPUTS_DIR / "start_time_leads.csv", index=False)
+        leads.to_csv(out_dir / "start_time_leads.csv", index=False)
         print(f"  recorded {len(leads)} bell schedule links that need to be opened by hand")
 
     candidates = pd.DataFrame(all_candidates)

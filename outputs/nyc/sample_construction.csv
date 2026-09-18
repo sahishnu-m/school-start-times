@@ -1,0 +1,4 @@
+step,schools
+Schools in the source data,427
+After removing schools under 100 students,427
+With a known start time (the analysis sample),425

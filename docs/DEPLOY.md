@@ -12,9 +12,9 @@ repository, so these files must be committed:
 - `requirements.txt`
 - `src/`
 - `config.yaml`
-- `data/processed/analysis_table.csv`
+- `data/processed/analysis_table_nyc.csv` and `analysis_table_nevada.csv`
 - `data/manual/start_times.csv`
-- `outputs/` (the charts and result tables)
+- `outputs/nyc/` and `outputs/nevada/` (the charts and result tables)
 
 The `.gitignore` in this repository is already set up that way. Check it before
 you deploy:
@@ -24,8 +24,8 @@ git status
 git ls-files data/processed outputs | head
 ```
 
-If `data/processed/analysis_table.csv` does not appear, run
-`python run_pipeline.py` first and commit the result.
+If the processed tables do not appear, run `python run_pipeline.py --site all
+--skip-scrape` first and commit the result.
 
 ## Steps
 
@@ -88,8 +88,8 @@ then commit and push.
 not committed. Run the pipeline locally, then:
 
 ```bash
-git add -f data/processed/analysis_table.csv
-git commit -m "Add processed analysis table for the deployed dashboard"
+git add -f data/processed/
+git commit -m "Add processed analysis tables for the deployed dashboard"
 git push
 ```
 
