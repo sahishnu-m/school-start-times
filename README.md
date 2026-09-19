@@ -184,8 +184,8 @@ every interval contains zero.
 statistics. Its adjusted models produce estimates of +2.9 to +3.5 ACT points
 per hour, about a full standard deviation, resting on the nine schools that
 start anywhere other than 7:00. Its graduation rate result also fails its
-robustness check: +6.35 points per hour (95% CI 1.17 to 11.52) becomes +0.25
-(95% CI -34.82 to 35.32) once the eight schools whose rate was published as
+robustness check: +6.35 points per hour (95% CI 0.99 to 11.70) becomes +0.25
+(95% CI -36.40 to 36.90) once the eight schools whose rate was published as
 ">95" are dropped.
 
 ---
