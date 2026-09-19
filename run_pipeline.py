@@ -174,7 +174,7 @@ def main() -> int:
     print()
     print("=" * 70)
     print("Tables and charts are in outputs/<site>/.")
-    print("Run the dashboard with: streamlit run streamlit_app.py")
+    print("Run the dashboard with: streamlit run app.py")
     print("=" * 70)
     return status
 

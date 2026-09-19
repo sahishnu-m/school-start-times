@@ -8,7 +8,7 @@ straight from GitHub, so every push updates the live site.
 The deployed app cannot run the pipeline. It only has what is in the
 repository, so these files must be committed:
 
-- `streamlit_app.py`
+- `app.py`
 - `requirements.txt`
 - `.streamlit/config.toml`, which pins the light theme
 - `src/`
@@ -43,7 +43,7 @@ If the processed tables do not appear, run `python run_pipeline.py --site all
    - **Repository**: start typing `school-start-times` and pick
      `sahishnu-m/school-start-times` from the dropdown.
    - **Branch**: `main`
-   - **Main file path**: `streamlit_app.py`
+   - **Main file path**: `app.py`
 
 6. Click **Advanced settings** just below those fields. Set **Python version**
    to `3.12`. Leave the secrets box empty, since this app has no API keys.
