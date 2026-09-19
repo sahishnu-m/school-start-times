@@ -50,8 +50,8 @@ If the processed tables do not appear, run `python run_pipeline.py --site all
    Click **Save**.
 
 7. Optionally, edit the **App URL** field to choose the address, for example
-   `nevada-school-start-times`. The full address becomes
-   `https://nevada-school-start-times.streamlit.app`.
+   `school-start-time-impact`. The full address becomes
+   `https://school-start-time-impact.streamlit.app`.
 
 8. Click **Deploy**.
 

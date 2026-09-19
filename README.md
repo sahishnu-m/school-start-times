@@ -9,7 +9,7 @@ The main sample is 425 New York City high schools, where start times run from
 second sample of 38 Nevada high schools is kept because it shows why this
 question is hard to study at all.
 
-**[Live app](https://school-start-times.streamlit.app)**
+**[Live app](https://school-start-time-impact.streamlit.app/)**
 
 ---
 
