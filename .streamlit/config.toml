@@ -1,0 +1,17 @@
+# Force the light theme.
+#
+# Streamlit follows the viewer's operating system setting by default, so the
+# page rendered white on one machine and near black on another. The charts in
+# outputs/ are PNG files drawn on a light surface and cannot repaint
+# themselves, so a dark page put light cards on a dark background. Pinning the
+# theme keeps the page and the charts consistent for every reader.
+[theme]
+base = "light"
+primaryColor = "#2a78d6"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f4f2"
+textColor = "#0b0b0b"
+
+[server]
+# The dashboard only reads files that the repository ships.
+enableStaticServing = false

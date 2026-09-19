@@ -10,6 +10,7 @@ repository, so these files must be committed:
 
 - `streamlit_app.py`
 - `requirements.txt`
+- `.streamlit/config.toml`, which pins the light theme
 - `src/`
 - `config.yaml`
 - `data/processed/analysis_table_nyc.csv` and `analysis_table_nevada.csv`
@@ -79,10 +80,16 @@ choose **Reboot app**.
 
 Open the build log and read the last twenty lines. The two common causes:
 
-**A package fails to install.** `requirements.txt` already uses minimum
-versions rather than exact pins for this reason. If one package still fails,
-pin that single package to the exact version listed in the comment beside it,
-then commit and push.
+**A package fails to install.** `requirements.txt` uses minimum versions rather
+than exact pins for this reason. If one package still fails, pin that single
+package and push again.
+
+**The app builds but shows an ImportError.** This happened once already, and it
+is why statsmodels and scipy are no longer dependencies: both are compiled
+against a particular numpy, and the host installed a combination that did not
+match. The statistics now run on numpy alone. If a new compiled package is ever
+added, expect the same failure mode and check it against a clean install
+first.
 
 **The app starts but says no analysis table was found.** The processed data was
 not committed. Run the pipeline locally, then:

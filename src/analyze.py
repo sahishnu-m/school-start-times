@@ -33,17 +33,16 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-import statsmodels.formula.api as smf
-from scipy import stats
 
 from .config import outputs_dir, site_config
+from .stats_core import design_matrix, fit_ols, pearson_correlation, welch_test
 
-# Robust standard errors. Schools vary enormously in size, so the spread of an
-# outcome around the regression line is larger for a school of 200 students
-# than for one of 3000. That is textbook heteroskedasticity, and it makes the
-# ordinary standard errors too small. HC3 is the variant that behaves best in
-# small samples, which is what this study has.
-COVARIANCE_TYPE = "HC3"
+# The regressions, the correlation and the two sample test are all computed in
+# src/stats_core.py, which uses numpy alone. statsmodels and scipy were used
+# here originally and were removed after the deployed dashboard failed to
+# import them: both are compiled against a specific numpy, and the hosted
+# environment installed a combination that did not match. The replacements are
+# checked against both libraries in tests/test_stats_core.py.
 
 # Human readable names used in tables and on the dashboard. One dictionary
 # covers both sites, since the column names do not collide.
@@ -110,28 +109,10 @@ def unadjusted_correlation(frame: pd.DataFrame, outcome: str) -> dict:
     back. Doing it the naive way would produce intervals that run past one.
     """
     subset = frame.dropna(subset=["start_hours", outcome])
-    n = len(subset)
-    if n < 4:
-        return {"outcome": outcome, "n": n, "r": np.nan, "ci_low": np.nan,
-                "ci_high": np.nan, "p_value": np.nan}
-
-    r, p_value = stats.pearsonr(subset["start_hours"], subset[outcome])
-
-    z = np.arctanh(r)
-    standard_error = 1.0 / np.sqrt(n - 3)
-    critical = stats.norm.ppf(0.975)
-    ci_low = np.tanh(z - critical * standard_error)
-    ci_high = np.tanh(z + critical * standard_error)
-
-    return {
-        "outcome": outcome,
-        "outcome_label": OUTCOME_LABELS.get(outcome, outcome),
-        "n": n,
-        "r": r,
-        "ci_low": ci_low,
-        "ci_high": ci_high,
-        "p_value": p_value,
-    }
+    result = pearson_correlation(subset["start_hours"], subset[outcome])
+    result["outcome"] = outcome
+    result["outcome_label"] = OUTCOME_LABELS.get(outcome, outcome)
+    return result
 
 
 def fit_one_model(
@@ -163,12 +144,8 @@ def fit_one_model(
             if column in subset.columns and subset[column].nunique() < 2:
                 return {"unidentified": column}
 
-    formula = f"Q('{outcome}') ~ start_hours"
-    for control in controls:
-        formula += f" + {control}"
-
-    # Standard errors. The default is heteroskedasticity robust, which handles
-    # the spread of an outcome widening with school size.
+    # Standard errors. The default is heteroskedasticity robust (HC3), which
+    # handles the spread of an outcome widening with school size.
     #
     # Where a site declares a cluster column, cluster robust errors are used
     # instead. In New York City several schools share one building, and schools
@@ -176,32 +153,19 @@ def fit_one_model(
     # same pool of applicants. Treating them as independent observations would
     # make the standard errors too small and the intervals too narrow.
     cluster_column = site_config(site).get("cluster_column")
-    fit_kwargs: dict = {"cov_type": COVARIANCE_TYPE}
+    groups = None
     if cluster_column and cluster_column in subset.columns:
-        groups = subset[cluster_column]
-        if groups.notna().all() and groups.nunique() > 1:
-            fit_kwargs = {"cov_type": "cluster", "cov_kwds": {"groups": groups}}
+        column = subset[cluster_column]
+        if column.notna().all() and column.nunique() > 1:
+            groups = column.to_numpy()
 
     try:
-        model = smf.ols(formula, data=subset).fit(**fit_kwargs)
+        X, names = design_matrix(subset, ["start_hours"] + controls)
+        model = fit_ols(subset[outcome].to_numpy(dtype=float), X, names, clusters=groups)
     except Exception:
         return None
 
-    if "start_hours" not in model.params.index:
-        return None
-
-    confidence = model.conf_int().loc["start_hours"]
-    return {
-        "coefficient": float(model.params["start_hours"]),
-        "std_error": float(model.bse["start_hours"]),
-        "ci_low": float(confidence.iloc[0]),
-        "ci_high": float(confidence.iloc[1]),
-        "p_value": float(model.pvalues["start_hours"]),
-        "n": int(model.nobs),
-        "r_squared": float(model.rsquared),
-        "adj_r_squared": float(model.rsquared_adj),
-        "model": model,
-    }
+    return model.for_term("start_hours")
 
 
 def model_ladder(
@@ -250,7 +214,6 @@ def model_ladder(
                 }
             )
         else:
-            result.pop("model")
             row.update(result)
             row["note"] = ""
         rows.append(row)
@@ -290,19 +253,13 @@ def stratified_comparison(frame: pd.DataFrame, outcome: str, site: str | None = 
         # Below that, report the group means and say plainly that no comparison
         # can be made, rather than printing a difference with no interval.
         if len(early) >= 2 and len(late) >= 2:
-            difference = late.mean() - early.mean()
-            test = stats.ttest_ind(late, early, equal_var=False)
-
-            # Welch interval, built by hand so the degrees of freedom match the
-            # test and the interval cannot disagree with the p value.
-            se = np.sqrt(late.var(ddof=1) / len(late) + early.var(ddof=1) / len(early))
-            critical = stats.t.ppf(0.975, test.df)
+            test = welch_test(late.to_numpy(), early.to_numpy())
             row.update(
                 {
-                    "difference_late_minus_early": difference,
-                    "ci_low": difference - critical * se,
-                    "ci_high": difference + critical * se,
-                    "p_value": float(test.pvalue),
+                    "difference_late_minus_early": test["difference"],
+                    "ci_low": test["ci_low"],
+                    "ci_high": test["ci_high"],
+                    "p_value": test["p_value"],
                     "note": "",
                 }
             )

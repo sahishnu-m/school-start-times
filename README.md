@@ -172,6 +172,39 @@ them as independent observations would make the intervals too narrow. There are
 254 buildings behind the 427 schools. Nevada uses heteroskedasticity robust
 (HC3) errors.
 
+### How the statistics are computed
+
+The regressions, the correlation and the two sample tests are computed in
+`src/stats_core.py`, which uses numpy alone.
+
+They used to call statsmodels and scipy. Both are excellent, and both are
+compiled against a particular version of numpy. The deployed dashboard
+installed a combination that did not match and failed on import, which took the
+whole page down with a redacted error message. Everything the study needs is
+ordinary linear algebra, so it is written out directly and the two libraries
+were removed. The dashboard now needs only numpy, pandas and Streamlit, and it
+starts faster.
+
+Replacing a trusted library with your own arithmetic is only acceptable if you
+check it. `tests/test_stats_core.py` refits every model in the study both ways
+and compares. Coefficients, standard errors and R squared agree with
+statsmodels to about one part in a billion, and the correlation and Welch test
+agree with scipy to machine precision.
+
+There is one deliberate difference. statsmodels builds confidence intervals
+from normal critical values by default, even for cluster robust errors. This
+study uses Student t instead, with n minus rank degrees of freedom for HC3 and
+clusters minus one for cluster robust errors. That is the Stata convention and
+it is slightly more conservative, so the intervals here are a little wider. The
+test file asserts that difference rather than leaving it as a surprise.
+
+To run the checks:
+
+```bash
+pip install -r requirements-dev.txt
+python tests/test_stats_core.py
+```
+
 ### Why admissions method is a control
 
 New York City high schools are chosen, not zoned. A screened school, an audition
@@ -208,11 +241,11 @@ Model 5, per hour later start:
 
 | Outcome | Estimate | 95% CI | n | In SDs |
 |---|---|---|---|---|
-| Four year graduation rate | +1.14 | -1.35 to 3.62 | 405 | +0.07 |
-| Advanced Regents diploma rate | -5.05 | -9.14 to -0.96 | 405 | -0.23 |
+| Four year graduation rate | +1.14 | -1.36 to 3.63 | 405 | +0.07 |
+| Advanced Regents diploma rate | -5.05 | -9.16 to -0.94 | 405 | -0.23 |
 | Attendance rate | -0.45 | -1.34 to 0.44 | 407 | -0.07 |
-| College and career readiness | +4.16 | 0.93 to 7.40 | 367 | +0.22 |
-| Dropout rate | -1.23 | -2.40 to -0.05 | 405 | -0.17 |
+| College and career readiness | +4.16 | 0.91 to 7.41 | 367 | +0.22 |
+| Dropout rate | -1.23 | -2.41 to -0.05 | 405 | -0.17 |
 
 The primary outcome, graduation rate, shows nothing at any rung of the ladder.
 The unadjusted estimate is -1.68 and the fully adjusted one is +1.14, and every
@@ -372,6 +405,17 @@ Start the dashboard:
 streamlit run streamlit_app.py
 ```
 
+The dashboard opens on New York City. Add `?site=nevada` to the address to open
+it on the Nevada comparison instead, which makes a link to either sample
+shareable.
+
+Verify the hand written statistics against statsmodels and scipy:
+
+```bash
+pip install -r requirements-dev.txt
+python tests/test_stats_core.py
+```
+
 Everything is cached under `data/`, so later runs are fast.
 
 ### Filling in missing Nevada start times
@@ -399,8 +443,15 @@ src/
   scrape_start_times.py        crawls Nevada school websites
   clean.py                     typing, renaming, shared column names
   merge.py                     joins sources, applies the sample filter
+  stats_core.py                least squares, robust and cluster standard
+                               errors, the t distribution, written in numpy
   analyze.py                   correlations, model ladder, robustness checks
   charts.py                    the charts
+
+tests/
+  test_stats_core.py           checks stats_core against statsmodels and scipy
+
+.streamlit/config.toml         pins the dashboard to the light theme
 
 data/
   raw/        untouched downloads

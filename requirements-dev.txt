@@ -1,0 +1,8 @@
+# Extra packages needed only to verify the hand written statistics.
+#
+# tests/test_stats_core.py refits every model both ways and compares. Nothing
+# the pipeline or the dashboard imports depends on these.
+-r requirements.txt
+pytest>=7.0
+statsmodels>=0.14
+scipy>=1.10
